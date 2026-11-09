@@ -1,0 +1,1183 @@
+{
+  "source": {
+    "site": "https://heinel.dev",
+    "commit": "6b90075",
+    "note": "Generated from the public content of heinel.dev. Do not edit by hand."
+  },
+  "profile": {
+    "name": "Filip Heinel",
+    "location": "Stockholm",
+    "tagline": "I develop & fix stuff",
+    "headline": "Full-stack developer, problem solver, organiser and planner, and a bridge between tech, business and, most importantly, users. Five years of TypeScript, React, Next.js and Node, most recently as a consultant for Affärsvärlden and Suntarbetsliv. Now SEO and development at Emax Media.",
+    "facts": [
+      {
+        "label": "Class",
+        "value": "Full-stack developer"
+      },
+      {
+        "label": "Posting",
+        "value": "Emax Media · SEO Specialist / Developer"
+      },
+      {
+        "label": "Base",
+        "value": "Stockholm, SE"
+      },
+      {
+        "label": "Development",
+        "value": "5 yrs · TypeScript · React · Next.js · Node"
+      },
+      {
+        "label": "Contracts",
+        "value": "Affärsvärlden · Suntarbetsliv · Evoli"
+      },
+      {
+        "label": "Ops",
+        "value": "COO · Acting CEO · Project management"
+      },
+      {
+        "label": "AI",
+        "value": "Agentic workflows · RAG · Claude plugins"
+      },
+      {
+        "label": "Tongues",
+        "value": "SV native · EN fluent, DE · PL basic, JA beginner"
+      }
+    ],
+    "now": [
+      {
+        "label": "Where",
+        "text": "Emax Media, a performance-marketing agency in Stockholm, since August 2026."
+      },
+      {
+        "label": "What",
+        "text": "I own the client relationship on my accounts, from e-commerce and B2B companies to local service businesses: the meetings, the SEO strategy and the delivery. I also build tools for my own work, some of them AI-assisted."
+      },
+      {
+        "label": "Speaks",
+        "text": "Swedish native, English fluent. German and Polish at a basic level. Japanese at beginner level, around JLPT N5."
+      },
+      {
+        "label": "Off the clock",
+        "text": "I'm in the Home Guard, keep breaking and fixing a Linux box at home, do strength training and running, and play board games and tabletop RPGs. I also plan trips and events for friends, which is where my planning platform started."
+      }
+    ],
+    "contact": {
+      "email": "filip@heinel.dev",
+      "website": "https://heinel.dev",
+      "linkedin": "https://www.linkedin.com/in/filip-heinel",
+      "github": "https://github.com/Wilkrew"
+    },
+    "cv": {
+      "en": "https://heinel.dev/Filip-Heinel-CV-EN-web.pdf",
+      "sv": "https://heinel.dev/Filip-Heinel-CV-SV-web.pdf"
+    }
+  },
+  "experience": [
+    {
+      "id": "emax",
+      "company": "Emax Media",
+      "title": "SEO Specialist / Developer",
+      "period": "Aug 2026 — present",
+      "lane": "career",
+      "summary": "SEO strategy and delivery for clients from e-commerce and B2B to local service companies. I run the client meetings and own the long-term relationship on my accounts. Between clients I build tools for my own work, some of them AI-assisted.",
+      "tags": [
+        "SEO",
+        "Client relationships",
+        "Internal tools"
+      ]
+    },
+    {
+      "id": "kumpan",
+      "company": "Kumpan",
+      "title": "Developer / Consultant",
+      "period": "May 2022 — Jun 2026",
+      "lane": "career",
+      "summary": "A Stockholm digital agency, where I spent four years as a consultant.",
+      "parts": [
+        {
+          "title": "Consultant",
+          "summary": "Client contracts for Affärsvärlden, Suntarbetsliv and Evoli, listed under Work. In-house, I was the frontend developer in a team of four on Stylee, a new product with ML and AI integration, and worked briefly on Radeito, an app for booking car workshops. The in-house stack: React, Next.js, Remix, React Native, Laravel and Supabase."
+        },
+        {
+          "title": "Company events",
+          "summary": "In a volunteer team of three or four, and sometimes on my own, I planned and ran Kumpan's events for colleagues, clients and possible recruits: monthly board-game nights with seasonal themes, adapted when clients or a possible recruit were coming, after-works, and a conference for about 20 people. They built the workplace community and client relationships, and were part of how Kumpan recruited."
+        }
+      ],
+      "tags": [
+        "Consulting",
+        "Event management",
+        "React",
+        "Next.js",
+        "PHP"
+      ]
+    },
+    {
+      "id": "studyclub",
+      "company": "Study Club AI",
+      "title": "Co-Founder / Full-stack Developer",
+      "period": "Dec 2022 — Apr 2024",
+      "lane": "career",
+      "summary": "I co-founded this AI study tool and built it full-stack, on the side of Kumpan. It used RAG to answer from course material and documents users uploaded. We tested it with a handful of teachers, students and people who work with teachers, then closed it. Selling to schools meant public procurement, which made the business case hard, and as an AI wrapper we were racing the AI giants. Without an in with a school or real procurement know-how, it wasn't worth going on. What I took from it: an AI product needs an edge of its own, not just a model behind it.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "OpenAI API",
+        "RAG",
+        "Stripe"
+      ]
+    },
+    {
+      "id": "muntra-dev",
+      "company": "Muntra",
+      "title": "Developer",
+      "period": "Jun 2021 — May 2022",
+      "lane": "career",
+      "summary": "Dental software. I moved from customer success into development and became solely responsible for the frontend of nine codebases, listed under Work. I ran those projects independently, in close cooperation with the CTO, in short Lean startup iterations. I also owned QA, second- and third-line support, and the integrations with X-ray systems and payment terminals. That meant working with customer success, the clinics' own IT and marketing people, and our in-house X-ray integration expert.",
+      "tags": [
+        "Project management",
+        "Next.js",
+        "React",
+        "React Native",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "muntra-csm",
+      "company": "Muntra",
+      "title": "Customer Success Manager",
+      "period": "Jan 2021 — Jun 2021",
+      "lane": "career",
+      "summary": "Dental software for clinics. I learned the product from the clinics' side, which shaped what I built once I moved into development. Along the way I picked up more and more frontend tasks and studied React every evening after work, until the developer role opened up six months in.",
+      "parts": [
+        {
+          "title": "Support and customer care",
+          "summary": "The clinics' first point of contact: first- and second-line support by chat, Zendesk and phone, and the long-term relationship after that."
+        },
+        {
+          "title": "Onboarding, sales and integrations",
+          "summary": "I trained new users on site and remotely, did upselling and cross-selling, set up the integrations with X-ray sensors and payment terminals, and wrote the guides for our internal routines."
+        }
+      ],
+      "tags": [
+        "Customer success",
+        "Zendesk",
+        "Onboarding",
+        "Upselling",
+        "Integrations",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "bright",
+      "company": "Bright Swimwear",
+      "title": "COO",
+      "period": "Feb 2018 — May 2020",
+      "lane": "career",
+      "summary": "An early-stage swimwear brand selling through social media. I started in sales, became one of the top sellers, and worked through every part of the company on the way to COO: recruiting and training staff, helping build the support team, and running the company for a month as acting CEO. We were about 20 people, and I helped train at least half of them. The plan was to return after conscription, but the role was cut when the pandemic hit.",
+      "parts": [
+        {
+          "title": "COO",
+          "period": "Feb 2018 — May 2020",
+          "summary": "Reported directly to the founder and was the right hand for everything involving the Swedish staff. When the sales records kept coming, took over order management so every order on the site was handled daily, sometimes from morning to night. Kept recruiting and training alongside it, and planned and ran events for colleagues and guests. On military leave from Aug 2019."
+        },
+        {
+          "title": "Acting CEO",
+          "period": "Jun 2018 — Jul 2018",
+          "summary": "A month in charge of all operations."
+        },
+        {
+          "title": "Customer support",
+          "period": "May 2018 — Dec 2018",
+          "summary": "Helped build the support desk when the company needed one. Support in Zendesk in Swedish, English and German, and recruited and trained the new support staff."
+        },
+        {
+          "title": "Influencer marketing team leader",
+          "period": "Feb 2018 — Aug 2018",
+          "summary": "Recruited influencers for collaborations, negotiated the deals and sold on commission. Promoted to team leader on KPIs, then recruited and trained new influencer marketers."
+        }
+      ],
+      "tags": [
+        "Operations",
+        "Leadership",
+        "Project management",
+        "Event management",
+        "Sales",
+        "Recruiting"
+      ]
+    },
+    {
+      "id": "forsvarsmakten",
+      "company": "Försvarsmakten and the voluntary defence organisations",
+      "title": "Swedish defence",
+      "period": "Since 2014",
+      "lane": "career",
+      "summary": "A thread since my early teens: Young Pilots and the air-defence youth section, conscription as an army ranger straight after upper secondary school, and the Home Guard today.",
+      "parts": [
+        {
+          "title": "Hemvärnet",
+          "period": "Jun 2025 — present",
+          "summary": "Home Guard, alongside regular work, where I also lead."
+        },
+        {
+          "title": "Army Ranger (Radio Operator)",
+          "period": "Aug 2019 — Jun 2020",
+          "summary": "Eleven months of conscription (värnplikt) as a ranger (jägarsoldat) and radio operator in the 31st Ranger Battalion, Livregementets husarer (K3), Karlsborg, including a couple of intense weeks on royal guard duty (Högvakten), where I did a little leadership."
+        },
+        {
+          "title": "ULv, Luftvärnsförbundets ungdomsavdelning",
+          "period": "Aug 2015 — Aug 2019",
+          "summary": "The youth section of the air-defence association in Roslagen, part of Sweden's voluntary defence organisations and run largely on assignment from Försvarsmakten. Took the leadership course, then led the other cadets and did some lighter instructing."
+        },
+        {
+          "title": "Young Pilots",
+          "period": "Oct 2014 — Jan 2019",
+          "summary": "The youth programme of Frivilliga Flygkåren, the voluntary flying corps. Camps and courses."
+        }
+      ],
+      "tags": [
+        "Leadership",
+        "Instructing",
+        "Radio communications"
+      ]
+    },
+    {
+      "id": "teknikmagasinet",
+      "company": "Teknikmagasinet",
+      "title": "Sales Associate / Phone Repair",
+      "period": "Oct 2018 — Nov 2021",
+      "lane": "earlier",
+      "summary": "Sales, campaigns, store displays and phone repairs, mostly in Åkersberga. I was in the store's staff pool the whole time, and for a while part-time with set hours, fitted around military service and Muntra. From the store manager's work certificate (2019, translated): “Filip is incredibly service-minded, willing to learn, and constantly does his best.”",
+      "tags": [
+        "Sales",
+        "Customer service",
+        "Phone repair",
+        "Visual merchandising"
+      ]
+    },
+    {
+      "id": "mcdonalds",
+      "company": "McDonald's Åkersberga",
+      "title": "Restaurant Crew Member",
+      "period": "May 2017 — Jun 2018",
+      "lane": "earlier",
+      "summary": "Register, kitchen and drive-through. First job.",
+      "tags": [
+        "Customer service",
+        "Cash handling"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "id": "affarsvarlden",
+      "title": "Affärsvärlden",
+      "kind": "Client",
+      "period": "Nov 2025 — Jun 2026",
+      "summary": "I owned the infrastructure and deploys for Affärsvärlden and Placera: Terraform on UpCloud, with GitHub Actions. I also worked full-stack in Next.js and Payload, in a tech team of five where four of us worked on the same parts. The two sites publish Swedish business news and investor information from one shared codebase. I worked mainly on Affärsvärlden, on a remote contract through Kumpan, and helped add OpenSearch to the infrastructure and the app.",
+      "result": "Every environment is defined in Terraform, so a new one comes from code, not a checklist.",
+      "tags": [
+        "Next.js",
+        "Payload",
+        "Terraform"
+      ],
+      "links": [
+        {
+          "label": "Visit Affärsvärlden",
+          "url": "https://www.affarsvarlden.se"
+        }
+      ]
+    },
+    {
+      "id": "suntarbetsliv",
+      "title": "Suntarbetsliv",
+      "kind": "Client",
+      "period": "Oct 2023 — Oct 2025",
+      "summary": "I built Friskfaktorlabbet full-stack, a reusable form tool that helps workplaces assess their health factors, in PHP, MySQL and WordPress, and shaped its architecture. Suntarbetsliv makes its tools for the more than a million people who work in Sweden's municipalities and regions. Over two years through Kumpan, in a core team of four, I also took on nearly all the project management on the assignment and brought Lean into the team's process. Later I also worked in Next.js, Payload and Supabase, and built the AI chatbot on suntarbetsliv.se, using RAG and vector search.",
+      "result": "Met a tight deadline on a legacy build, and the tool is live today.",
+      "tags": [
+        "Project management",
+        "WordPress",
+        "Next.js",
+        "RAG"
+      ],
+      "url": "https://heinel.dev/suntarbetsliv",
+      "links": [
+        {
+          "label": "About the tool",
+          "url": "https://www.suntarbetsliv.se/filmer/friskfaktorlabbet-ett-verktyg-fran-suntarbetsliv/"
+        }
+      ]
+    },
+    {
+      "id": "evoli",
+      "title": "Evoli",
+      "kind": "Client",
+      "period": "Aug 2022 — May 2023",
+      "summary": "I built the frontend for Evoli's new back office for claims handlers and owned its UX/UI design, design decisions included. Evoli is a digital insurance company. On a contract through Kumpan, I had a say in the system architecture and worked closely with the dev team, the product owner and management. I also helped structure the project, its tickets and the routines around them.",
+      "result": "A new back office for claims handlers, and guidelines for how the team structures the work and writes its tickets.",
+      "tags": [
+        "React",
+        "UX/UI",
+        "TanStack"
+      ]
+    },
+    {
+      "id": "muntra",
+      "title": "Muntra",
+      "kind": "Employer",
+      "period": "Jun 2021 — May 2022",
+      "summary": "I was solely responsible for the frontend of nine codebases at Muntra, which makes software for dental clinics, and saw that work through: QA, support and the integrations. That was in a small tech team: the CTO, me and one to three backend developers. Several were built from scratch:",
+      "highlights": [
+        "A booking site and an embeddable booking widget",
+        "A referral widget",
+        "Our own tracking pixel, think Meta Pixel or Google tag",
+        "A lab-order site",
+        "Internal and external docs sites",
+        "A React Native check-in app",
+        "A WebSocket event handler in Node.js for chat rooms"
+      ],
+      "result": "All of it shipped and worked as one system, and by the time I left, the booking site was the default for almost all of Muntra's clinics.",
+      "tags": [
+        "Project management",
+        "Next.js",
+        "React",
+        "React Native",
+        "Node.js"
+      ],
+      "links": [
+        {
+          "label": "Open the booking site",
+          "url": "https://www.muntra.com"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "Delivery system for AI-assisted client work",
+      "kind": "Method",
+      "summary": "The controls around an AI-assisted workflow for client documents: every figure traceable to a source, a person approving anything a client sees, and a written way to do the work without the tool.",
+      "tags": [
+        "Human review",
+        "Traceable figures",
+        "Written fallback"
+      ],
+      "url": "https://heinel.dev/delivery"
+    },
+    {
+      "id": "methods",
+      "title": "AI skills, maintained like software",
+      "kind": "Personal project",
+      "summary": "A personal Claude plugin of 14 researched skills, tested and maintained by subagents and a scheduled agent run, and built like software: CI on every push, a cost budget and versioned releases.",
+      "tags": [
+        "Agentic workflows",
+        "Subagents",
+        "Claude plugins",
+        "GitHub Actions",
+        "Python"
+      ],
+      "url": "https://heinel.dev/methods"
+    },
+    {
+      "id": "nether",
+      "title": "Nether",
+      "kind": "Personal project",
+      "summary": "A community app built around local events in the cities you choose. Members decide how visible they are and what kinds of contact they accept, and trust is built through vouches from people they've met.",
+      "tags": [
+        "Next.js",
+        "PostgreSQL",
+        "TypeScript"
+      ],
+      "url": "https://heinel.dev/nether"
+    },
+    {
+      "id": "planning-platform",
+      "title": "A planning platform",
+      "kind": "Personal project",
+      "summary": "A planning platform for anyone, from one person to a larger organisation, starting with trips; an event planner comes later. It installs on your phone, works offline and encrypts every trip end to end. The aim is better tools and information for everyone who plans: a shared, source-checked database of places, self-hostable or ready to use. I'm also exploring a link to Nether, so hosts can plan an event's logistics here. Early proof of concept: a prototype gets tested on a real trip while the first version is built.",
+      "tags": [
+        "TypeScript",
+        "PWA",
+        "WebCrypto",
+        "Cloudflare Workers"
+      ]
+    }
+  ],
+  "cases": {
+    "suntarbetsliv": {
+      "url": "https://heinel.dev/suntarbetsliv",
+      "title": "Friskfaktorlabbet for Suntarbetsliv",
+      "oneLiner": "A reusable form tool that guides work groups through improving their health factors, built over two years as a consultant through Kumpan, with the project management around it.",
+      "problem": "Suntarbetsliv is run jointly by unions and employer organisations, for people who work in municipalities and regions. Friskfaktorlabbet gives a manager and a safety representative guided activities to run with their work group: everyone rates the workplace's health factors, then the group agrees on where things stand, prioritises and makes a plan. The tool had to carry several activities like that, not one fixed form.",
+      "constraints": [
+        "I took over a legacy, custom-built WordPress setup at short notice, with a tight deadline.",
+        "Suntarbetsliv's site was still on WordPress, so the tool had to live there.",
+        "It had to stay maintainable after the contract, by Suntarbetsliv or the next team.",
+        "About ten people were involved around it, so plans and priorities had to stay clear."
+      ],
+      "role": "I worked in a core team of four, with one other developer, and about ten people around us. I built the tool full-stack, shaped its architecture and took on nearly all the project management on the assignment. Later I worked in Next.js, Payload and Supabase too, and built the AI chatbot on suntarbetsliv.se, using retrieval-augmented generation (RAG) and vector search.",
+      "decisions": [
+        {
+          "name": "One reusable tool, not one-off forms",
+          "line": "The activities are built from reusable components, so a new one doesn't mean starting over."
+        },
+        {
+          "name": "WordPress, for now",
+          "line": "Suntarbetsliv hadn't moved off WordPress yet, so the tool was built in PHP and MySQL, inside the site they already had."
+        },
+        {
+          "name": "Take the reins, work Lean",
+          "line": "With a tight deadline on a build that was new to me, I took the reins and ran the work the Lean startup way: small, fast steps, each checked against what the client and the users needed. That kept the other developer and me in close step too."
+        },
+        {
+          "name": "A chatbot with a feedback loop",
+          "line": "The chatbot uses RAG: it finds relevant material with vector search in pgvector before it answers. Every answer was logged and could be rated or flagged, which gave a feedback loop for improving it."
+        }
+      ],
+      "result": "We met the deadline with a tool that fit the client and its users, and Friskfaktorlabbet is live today.",
+      "resultProof": {
+        "link": "Afa Försäkring",
+        "href": "https://www.afaforsakring.se/forsakring/utbildning-och-material/regionala-dagar/satsning-pa-friskfaktorer-inom-valfarden",
+        "rest": " points work groups to it in its 2024–2026 focus on health factors in the welfare sector."
+      },
+      "screenshot": {
+        "src": "/screens/friskfaktorlabbet-start.webp",
+        "width": 1600,
+        "height": 1219,
+        "alt": "Friskfaktorlabbet's start page: the health-factor wheel, eight orange segments for factors such as leadership, participation, communication and early support.",
+        "caption": "The health-factor wheel on Friskfaktorlabbet's start page. Screenshot from the live site, November 2026."
+      },
+      "differently": "Given a fresh start and more time, I'd plan the architecture first, properly evaluate the different options, and choose the ones that best fit the tool and the client, instead of building on what was there. Fast Lean startup steps were how we met the deadline on the legacy build.",
+      "links": [
+        {
+          "label": "Open Friskfaktorlabbet",
+          "url": "https://friskfaktorlabbet.suntarbetsliv.se/"
+        },
+        {
+          "label": "About the tool",
+          "url": "https://www.suntarbetsliv.se/filmer/friskfaktorlabbet-ett-verktyg-fran-suntarbetsliv/"
+        }
+      ],
+      "tags": [
+        "PHP",
+        "MySQL",
+        "WordPress",
+        "WPBakery",
+        "Next.js",
+        "Payload",
+        "Supabase",
+        "RAG",
+        "Vector databases",
+        "AWS"
+      ]
+    },
+    "ai-skills": {
+      "url": "https://heinel.dev/methods",
+      "title": "AI skills, maintained like software",
+      "oneLiner": "A personal Claude plugin: 14 researched methods as skills, tested and maintained by subagents and a scheduled agent run. It's built like software, with CI on every push, a cost budget, versioned releases and an export to five other AI agent clients.",
+      "problem": "AI assistants answer confidently, even when they're wrong, and good method gets lost between chats and projects. That means answers someone has to check again, and results that depend on who asked and how. I wanted the methods I rely on to be explicit, sourced and applied the same way every time, without the cost of loading them growing out of hand.",
+      "constraints": [
+        "Every skill's description loads into every conversation, so each one costs tokens all the time.",
+        "The agents read web pages and GitHub issues, and outside text can carry instructions meant to hijack them.",
+        "No private names may reach a skill.",
+        "Dated facts and links go stale, so they need rechecking at the source.",
+        "It has to work in other AI clients too, not only in Claude."
+      ],
+      "role": "My own project. I research and write the methods, and designed how the plugin is built, tested and maintained. I built the test, measurement and release tooling in Python and GitHub Actions, set up the agent workflows around it, and approve every release.",
+      "agentic": [
+        {
+          "name": "A routing eval, run by a subagent",
+          "line": "In every maintenance run, a read-only subagent on a smaller model sees only each skill's name and description, and picks a skill for each of 54 example requests. A wrong pick points to the description that misled it."
+        },
+        {
+          "name": "Three reviewers, one brief",
+          "line": "Before the latest release, three read-only subagents each reviewed a part of the plugin against the same brief, looking for anything tied to one project or person. Their findings became one plan, and I decided what changed."
+        },
+        {
+          "name": "A scheduled maintenance agent",
+          "line": "Every quarter, an agent run measures the plugin, rechecks dated facts and links at their sources, works through lessons logged as GitHub issues and opens a draft pull request with a report. Nothing merges until I approve it."
+        },
+        {
+          "name": "From chat to issue to release",
+          "line": "A correction in any chat becomes a GitHub issue, one per lesson, so chats running at the same time never overwrite each other. The maintenance run turns them into changes, and only it closes them."
+        },
+        {
+          "name": "The right model for each step",
+          "line": "Helpers that check, review or fetch run on a smaller, cheaper model. The model-choice skill, built on research into model routing and cascades such as FrugalGPT and RouteLLM, applies the same rule to any task: cheap checks first, and a larger model only when a check fails."
+        },
+        {
+          "name": "Guarded against prompt injection",
+          "line": "Text from web pages and issues counts as data, never as instructions, and the helpers that read it can't change anything. The security skill also reviews AI agent setups against OWASP's Top 10 lists for LLM and agentic applications."
+        }
+      ],
+      "skills": [
+        {
+          "id": "sources",
+          "name": "Source evaluation",
+          "line": "A 1–5 trust score per claim, built on the Swedish Psychological Defence Agency's “Kolla källan” questions. It scores what a rule says separately from what people actually do."
+        },
+        {
+          "id": "decisions",
+          "name": "Decision analysis",
+          "line": "Multi-criteria scoring with swing weights. People weigh independently, so the first speaker doesn't anchor everyone. A robustness check runs across hundreds of nearby weightings, and the process ends with a pre-mortem."
+        },
+        {
+          "id": "estimate",
+          "name": "Estimates",
+          "line": "Time, cost and usage as a range with a P50 and a P80: how similar cases went first, then a simulation of the parts, then a check against what actually happened."
+        },
+        {
+          "id": "ux",
+          "name": "UX and UI",
+          "line": "16 principles drawn from Nielsen Norman Group, GOV.UK and Apple's and Google's design guidelines, with a screenshot review checklist."
+        },
+        {
+          "id": "a11y",
+          "name": "Accessibility",
+          "line": "WCAG 2.2 AA in practice, tested with axe-core plus a keyboard and screen-reader pass."
+        },
+        {
+          "id": "writing",
+          "name": "Plain writing",
+          "line": "The plain-language standard ISO 24495-1, applied with Swedish klarspråk and plain English: the most important thing first, one idea per sentence, common words."
+        },
+        {
+          "id": "data",
+          "name": "Data modelling",
+          "line": "Cardinality, keeping data consistent where there are no transactions, concurrency, versioned migrations, and Postgres/Supabase row-level security."
+        },
+        {
+          "id": "security",
+          "name": "Security review",
+          "line": "A threat model with STRIDE, then checks against the OWASP Top 10 and ASVS for web apps, repositories, CI and AI agents. A review aid, not a penetration test."
+        },
+        {
+          "id": "plugins",
+          "name": "Plugin engineering",
+          "line": "Lessons from building and running plugins, especially ones a team shares: what works, what breaks, and the checks that prevent it."
+        },
+        {
+          "id": "models",
+          "name": "Model choice",
+          "line": "Which model and effort level for each step: cheap checks first, and a larger model only when a check fails. Written for any AI client and for self-hosted models."
+        },
+        {
+          "id": "maintenance",
+          "name": "Maintenance",
+          "line": "Upkeep of this plugin: measuring its token use, testing which skill each request picks, rechecking facts and links, working through logged lessons, and building new versions."
+        },
+        {
+          "id": "intake",
+          "name": "Lesson intake",
+          "line": "Corrections and findings from any chat become GitHub issues: made general, checked for duplicates, and filed only after the user says yes."
+        },
+        {
+          "id": "proactive",
+          "name": "Proactive help",
+          "line": "After the answer, at most three suggestions tied to the user's own plans: collisions, closing windows, single points of failure and missing steps. Nothing is done without a yes."
+        },
+        {
+          "id": "asks",
+          "name": "What I need from you",
+          "line": "Every reply that needs an answer or an action from the user ends with one numbered list of questions and actions, with labels that carry over until each one is answered or done."
+        }
+      ],
+      "origin": "Most of these methods started in my planning platform, a side project with a trip planner, and an event planner to follow. There they keep the data model, the accessibility tests and the fact-checking consistent.",
+      "decisions": [
+        {
+          "name": "Treat skills as software",
+          "line": "The source lives in GitHub, and every push runs CI in GitHub Actions: the self-test, the export and the cost measurement. The self-test checks structure, versions, references and valid frontmatter, and blocks private names, which it knows only as salted hashes."
+        },
+        {
+          "name": "Evidence first",
+          "line": "Ten of the skills rest on cited research, standards and official guidance, with every source scored 1–5. Before a fact is stored, shared or relied on, Claude checks it at the original source, looks harder at anything implausible and marks what it couldn't confirm."
+        },
+        {
+          "name": "Checked from outside",
+          "line": "Research shows models are poor at catching their own mistakes without outside feedback. So the checks run against sources, tests and separate reviewers rather than the model's own opinion, and I approve anything that matters. That lowers the risk of made-up facts; it doesn't remove it."
+        },
+        {
+          "name": "A budget for cost",
+          "line": "A script estimates tokens in three tiers: descriptions, loaded in every chat; instructions, loaded when a skill is used; and reference files, loaded only when read. The self-test fails if the descriptions together pass about 1,500 tokens."
+        },
+        {
+          "name": "Portable, not locked in",
+          "line": "An export packages the skills in the open Agent Skills format, with an install guide for Codex, Cursor, Gemini CLI, GitHub Copilot and OpenCode. Claude-only features are marked, each with a fallback for other clients."
+        },
+        {
+          "name": "Release from clean source",
+          "line": "Every build gets a version bump and a changelog entry. A release script checks the packaged files against the source and keeps every version with checksums."
+        }
+      ],
+      "value": [
+        {
+          "name": "Lower running cost",
+          "line": "What loads in every conversation is measured and capped, and the checking runs on cheaper models."
+        },
+        {
+          "name": "Answers you can check",
+          "line": "Facts trace back to scored sources, and anything that couldn't be confirmed is marked as such."
+        },
+        {
+          "name": "Change without surprises",
+          "line": "Every change passes the tests and my review before it merges, and ships as a versioned release with a changelog."
+        },
+        {
+          "name": "Risk kept in check",
+          "line": "A person approves anything that matters, private names can't get in, and outside text is treated as data, which makes the agents harder to hijack."
+        },
+        {
+          "name": "No lock-in",
+          "line": "The same skills install in six AI agent clients, Claude among them."
+        }
+      ],
+      "result": "Fourteen skills, in daily use across my own projects. The part loaded in every conversation comes to about 1,170 tokens, down from about 1,320 before the latest release, even with a skill added.",
+      "tags": [
+        "Agentic workflows",
+        "Subagents",
+        "Evals",
+        "Context engineering",
+        "Prompt-injection defence",
+        "Python",
+        "GitHub Actions",
+        "CI/CD",
+        "Claude plugins and skills"
+      ]
+    },
+    "delivery": {
+      "url": "https://heinel.dev/delivery",
+      "title": "Delivery system for AI-assisted client work",
+      "oneLiner": "The controls around an AI-assisted workflow for client documents: figures you can trace, a person approving anything a client sees, and lessons from live work reviewed before they change the method.",
+      "problem": "Client work has to be consistent and safe to show, but one specialist's judgment is hard to repeat across many clients.",
+      "constraints": [
+        "Client data and decisions must never move from one account to another.",
+        "Every figure in a client document has to trace back to a source and a period.",
+        "Nothing reaches a client without a person's yes.",
+        "The work has to carry on when the AI tool is down."
+      ],
+      "role": "I designed the operating layer around an AI-assisted workflow for client documents: the rules, the checks and the fallback. I designed it on my own. The professional rules in it build on what experienced colleagues have learned, and on their feedback.",
+      "decisions": [
+        {
+          "name": "Three layers, kept apart",
+          "line": "Shared professional standards, my own preferences and one client's decisions each live in their own place, so one client's choice never becomes everyone's rule."
+        },
+        {
+          "name": "Labelled by audience",
+          "line": "Every draft says who it's for, so internal notes stay internal."
+        },
+        {
+          "name": "Improve on a schedule",
+          "line": "The method changes on a cadence, not on impulse. Corrections wait for a scheduled review."
+        },
+        {
+          "name": "A written fallback",
+          "line": "A written method describes how the work continues when the AI tool is unavailable."
+        }
+      ],
+      "steps": [
+        {
+          "id": "export",
+          "name": "Export",
+          "line": "Data comes in as exports from several tools, and exports are messy."
+        },
+        {
+          "id": "check",
+          "name": "Check",
+          "line": "Every figure gets a source and a period. A file that can't be read is reported, never skipped."
+        },
+        {
+          "id": "reconcile",
+          "name": "Reconcile",
+          "line": "Where two tools disagree, it is settled before anything is written."
+        },
+        {
+          "id": "draft",
+          "name": "Draft",
+          "line": "A first draft is written with AI assistance, within the shared standards and that client's own decisions, and labelled by audience."
+        },
+        {
+          "id": "approve",
+          "name": "Approve",
+          "line": "I review every draft. Nothing reaches the client or a shared folder without my clear yes."
+        },
+        {
+          "id": "learn",
+          "name": "Learn",
+          "line": "Corrections are sorted as personal, one account or general. General ones wait for the scheduled review."
+        }
+      ],
+      "boundary": "Built for real client work. No client material, tool names or internal methods are shown here.",
+      "tags": [
+        "Workflow design",
+        "Quality control",
+        "Data validation",
+        "Human review",
+        "Process documentation"
+      ]
+    },
+    "nether": {
+      "url": "https://heinel.dev/nether",
+      "title": "Nether",
+      "oneLiner": "A discretion-first community built around events in the cities you choose: contact on your terms, trust that members earn from each other, and every safety tool free.",
+      "premise": [
+        "Dating apps and niche community platforms leave a lot of room to do better. Safety often falls on whoever gets contacted, and the tools that keep people safe often cost extra. Nether starts with gender, sexuality and relationship minorities in Sweden, and is meant to work for everyone else too.",
+        "Nether is my attempt to change that. Safety comes in layers: consent before contact, visibility each person controls, and members who can vouch for each other. The business model has to pay for running and moderating a safe platform, without tricks that work against the people using it.",
+        "And it's made for people, not users. Each person decides how visible they are, what contact they accept, which cities they follow and how much of themselves they show, and it works fully for people who never show their face.",
+        "Some apps and communities already get parts of this right, and I'd rather build on that with them than compete."
+      ],
+      "role": "My own project. I designed and built it on my own.",
+      "constraints": [
+        "Contact follows rules each member sets, and only members who opt in appear in the card stack.",
+        "Explicit photos have to stay hidden from anyone who hasn't chosen to see them.",
+        "Hosting has to be in the EU."
+      ],
+      "decisions": [
+        {
+          "name": "No swipe deck, no open forum",
+          "line": "Matching is an opt-in list of cards with Like and Pass, not a swipe gesture. Instead of an open forum there are a few moderated boards, for a place or an interest, where trial members and members can meet."
+        },
+        {
+          "name": "Start from events",
+          "line": "Everyone starts with events in the cities they choose. Hosting, open messaging and the wider community come with membership."
+        },
+        {
+          "name": "Contact on your terms",
+          "line": "Each member sets what kinds of contact they accept. A first message also needs a path: a mutual like, a shared board or a vouch."
+        },
+        {
+          "name": "Trust is earned",
+          "line": "Everyone moves up a visible ladder, from guest to trial member to member, with a stated reason at each step. Vouches from people you've actually met open the most trusted events, and there's no single trust score to farm."
+        },
+        {
+          "name": "Money never buys around the rules",
+          "line": "Blocks, contact rules, discretion tools and seeing who liked you are free. Money pays for membership, never for access to other people. There are no ads on member pages, and likes, visibility and search are never for sale."
+        },
+        {
+          "name": "Rules in code, not in the screens",
+          "line": "The safety and privacy rules live in tested code on the server, not in the screens, so the interface can't skip them."
+        }
+      ],
+      "rules": [
+        {
+          "id": "calendar",
+          "name": "Your cities only",
+          "line": "The calendar shows events only in the cities you follow, and guests can follow cities before joining."
+        },
+        {
+          "id": "identity",
+          "name": "One person, three views",
+          "line": "One person can have a card, a profile and a personal room: three views of the same person, each optional. Filters for faces, contact intents, cities and distance decide who appears in the stack."
+        },
+        {
+          "id": "posture",
+          "name": "Visibility",
+          "line": "Everyone chooses how visible they are: sealed, careful or open."
+        },
+        {
+          "id": "media",
+          "name": "Photos",
+          "line": "Explicit photos stay blurred until the person looking chooses to see them."
+        },
+        {
+          "id": "blocks",
+          "name": "Blocks",
+          "line": "A block hides both people from each other everywhere: cards, rooms, events and messages."
+        },
+        {
+          "id": "inbox",
+          "name": "Inbox",
+          "line": "Messages are text only, with no photos or link previews, and sending is paced."
+        },
+        {
+          "id": "notices",
+          "name": "Notifications",
+          "line": "A notification says that something happened. It never includes the message itself."
+        },
+        {
+          "id": "leave",
+          "name": "Quick exit",
+          "line": "One tap takes you away to a neutral page."
+        },
+        {
+          "id": "delete",
+          "name": "Deleting",
+          "line": "Deleting your account is one confirmed action, and it removes everything."
+        }
+      ],
+      "refuses": "I left out the photo-and-distance first impression, and kept each screen to a few clear choices. The interface stays calm, in three looks, Classic, Pride and Edge, each in three intensities. Meaning is written out, so it never depends on colour or an icon alone.",
+      "engineering": [
+        "The app is TypeScript on Next.js (App Router) and React 19. Data is in PostgreSQL, accessed through Drizzle. Sign-in is a magic link via Better Auth, and the rate limits are stored in the database.",
+        "The rule modules decide who may take part, when a message is allowed, when a photo stays blurred, how one member can vouch for another, who is in a private group, and which pages a search engine may list.",
+        "Themes are applied in the browser: colour and intensity tokens, and icons drawn as strokes. I test the looks and intensities with Playwright and axe against WCAG 2.2 AA, plus contrast unit tests.",
+        "Search engines are kept out unless a page is explicitly allowed, and an image file is not sent until the viewer is allowed to see it.",
+        "Automated tests cover the safety rules, and an accessibility scan runs on about 20 pages."
+      ],
+      "result": "In testing, not launched. Before launch: EU hosting, file storage on Cloudflare R2, a mail provider, payment for membership, a privacy law review and a manual screen-reader pass. I'm also exploring a link with my planning platform, so hosts can plan an event's run-of-show, tasks, venue and budget there, while invitations, addresses and attendees stay in Nether.",
+      "tags": [
+        "Next.js",
+        "React",
+        "PostgreSQL",
+        "Drizzle",
+        "TypeScript",
+        "Better Auth"
+      ]
+    }
+  },
+  "skills": {
+    "groups": [
+      {
+        "id": "interface",
+        "label": "Frontend",
+        "items": [
+          "TypeScript",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "Remix",
+          "React Native",
+          "Expo",
+          "Redux",
+          "TanStack",
+          "Tailwind",
+          "Styled Components"
+        ]
+      },
+      {
+        "id": "server",
+        "label": "Backend and data",
+        "items": [
+          "Node.js",
+          "PHP",
+          "Laravel",
+          "WordPress",
+          "Payload",
+          "REST APIs",
+          "GraphQL",
+          "MySQL",
+          "PostgreSQL",
+          "Supabase",
+          "pgvector",
+          "OpenSearch"
+        ]
+      },
+      {
+        "id": "around",
+        "label": "Infrastructure and tools",
+        "items": [
+          "Git",
+          "GitHub Actions",
+          "CI/CD",
+          "Docker",
+          "Terraform",
+          "Vercel",
+          "DigitalOcean",
+          "UpCloud",
+          "AWS",
+          "Linux",
+          "Python",
+          "Figma",
+          "Jest",
+          "QA and testing"
+        ]
+      },
+      {
+        "id": "search",
+        "label": "Search",
+        "items": [
+          "Technical SEO",
+          "On-page SEO",
+          "Content optimisation",
+          "Ahrefs",
+          "Google Search Console",
+          "GA4",
+          "Screaming Frog",
+          "Diginius",
+          "Heddy",
+          "Self-built tools"
+        ]
+      },
+      {
+        "id": "ai",
+        "label": "AI",
+        "items": [
+          "RAG",
+          "Vector databases",
+          "Agentic workflows",
+          "Evals",
+          "MCP",
+          "Cursor",
+          "Claude Code",
+          "Claude plugins and skills",
+          "OpenAI API"
+        ]
+      }
+    ],
+    "training": [
+      "Become a WordPress Developer (Udemy, 2024)",
+      "CS50 (Harvard, 2022)",
+      "Modern React with Redux (Udemy, 2021)",
+      "SEO Toolkit (Semrush, 2021)",
+      "SEO for Beginners (Udemy, 2021)",
+      "Responsive Web Design (freeCodeCamp, 2021)",
+      "Decision and Risk Analysis (University of Gävle, 2020)",
+      "Technology programme, Österåkers Gymnasium (2016–2019)"
+    ]
+  },
+  "sheet": {
+    "class": "Full-stack developer (multiclass)",
+    "calling": "Problem solver, organiser and planner",
+    "origin": "Self-taught. Kitchen, web shop, shop floor, regiment, dental software, a consultancy, then search. Every stop worked the same way: learn the job, then fix the part that is stuck.",
+    "languages": [
+      {
+        "name": "Swedish",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Fluent"
+      },
+      {
+        "name": "German",
+        "level": "Basic"
+      },
+      {
+        "name": "Polish",
+        "level": "Basic"
+      },
+      {
+        "name": "Japanese",
+        "level": "Beginner (around N5)"
+      }
+    ],
+    "studying": {
+      "updated": "2026-11-09",
+      "items": [
+        {
+          "id": "japanese",
+          "name": "Japanese",
+          "reps": 1,
+          "line": "Over a year in, slowly: around JLPT N5, the first of five levels. Not a conversation yet."
+        },
+        {
+          "id": "crypto",
+          "name": "Encryption and offline apps",
+          "reps": 2,
+          "line": "WebCrypto, offline-first apps and Cloudflare Workers, learned by building my planning platform."
+        },
+        {
+          "id": "mcp",
+          "name": "MCP servers",
+          "reps": 2,
+          "line": "Three so far, built with the official TypeScript SDK: one for my CV, one for Stockholm's public transport and a read-only one for my trip planner."
+        },
+        {
+          "id": "home-guard",
+          "name": "Home Guard",
+          "reps": 3,
+          "line": "Courses and exercises alongside the day job."
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "id": "build",
+        "name": "Build",
+        "reps": 5,
+        "line": "The daily craft. TypeScript, React, Next.js, Node, PHP and WordPress, from the component to the server it runs on."
+      },
+      {
+        "id": "search",
+        "name": "Search",
+        "reps": 4,
+        "line": "Technical and on-page SEO and content, now client work every day."
+      },
+      {
+        "id": "sell",
+        "name": "Sell",
+        "reps": 4,
+        "line": "One of the top sellers at Bright Swimwear, then trained the people who sold next. Negotiated influencer deals on commission."
+      },
+      {
+        "id": "serve",
+        "name": "Serve",
+        "reps": 4,
+        "line": "First- to third-line support, a support team I helped build from nothing, users trained on site and remote."
+      },
+      {
+        "id": "run",
+        "name": "Run",
+        "reps": 4,
+        "line": "COO at Bright Swimwear, project management at Muntra and Suntarbetsliv, and Kumpan's company events, from monthly board-game nights to a conference for about 20 people."
+      },
+      {
+        "id": "direct",
+        "name": "Direct",
+        "reps": 4,
+        "line": "Picks the right speed for the job: by hand, assisted, or an agentic workflow that runs inside set limits. Builds the agents, skills and checks behind it, too."
+      }
+    ],
+    "proficiencies": [
+      {
+        "id": "keys",
+        "name": "At the keys",
+        "items": [
+          "TypeScript",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "PHP",
+          "WordPress",
+          "Payload",
+          "Node.js",
+          "SQL",
+          "Terraform",
+          "SEO",
+          "Claude plugins",
+          "Agentic workflows",
+          "RAG"
+        ]
+      },
+      {
+        "id": "room",
+        "name": "In the room",
+        "items": [
+          "Customer service",
+          "Sales",
+          "Negotiation",
+          "Business development",
+          "Operations",
+          "Leadership",
+          "Instructing",
+          "Event management",
+          "Project management",
+          "Recruiting",
+          "Training",
+          "Onboarding"
+        ]
+      }
+    ],
+    "stances": [
+      {
+        "id": "bare",
+        "name": "Bare hands",
+        "line": "The foundation everything else rests on. Writing React, PHP and SQL from a blank file, reading a codebase I didn't write, debugging in the browser and the terminal, setting up servers on Linux, and auditing a page for SEO by eye. If every tool went down tomorrow, the work would still get done."
+      },
+      {
+        "id": "assisted",
+        "name": "Assisted",
+        "line": "An assistant drafts, I decide what is correct and what ships, and I review its work the way I'd review a colleague's pull request."
+      },
+      {
+        "id": "automated",
+        "name": "Set to run",
+        "line": "Some work can run on its own once the limits are clear: what the model may draft, what a person must approve, which numbers must trace to a source, and what may never move between client accounts. Built well, that is faster than doing it by hand. An open chat window is not that."
+      }
+    ],
+    "moments": [
+      {
+        "id": "deadline",
+        "name": "Thrown in at the deep end",
+        "line": "At Suntarbetsliv I took over a legacy WordPress build at short notice, with barely any handover and a tight deadline. I took the reins, worked in small, fast steps checked against the client and the users, and we met the deadline."
+      },
+      {
+        "id": "phone",
+        "name": "The users were a phone call away",
+        "line": "I moved into development at Muntra from customer success, so I knew the people using what I built. When something was unclear, I could just ask them."
+      },
+      {
+        "id": "trusted",
+        "name": "Trusted with the company",
+        "line": "Four months into the job at Bright Swimwear, the founder went on holiday and left me running the company. I was acting CEO for a month."
+      },
+      {
+        "id": "instructor",
+        "name": "From cadet to leader",
+        "line": "In the air-defence youth section I went from taking the leadership course to leading the other cadets, with some lighter instructing. That was worth a lot during conscription, and still is in the Home Guard."
+      },
+      {
+        "id": "repair",
+        "name": "Fixing stuff, literally",
+        "line": "“I develop & fix stuff” isn't only about code. Before software was my job, and for a while alongside it, I repaired phones at Teknikmagasinet."
+      }
+    ],
+    "quests": [
+      {
+        "id": "host",
+        "name": "Self-hosting",
+        "line": "A Linux box at home running my own services. Mostly an excuse to break things and fix them."
+      },
+      {
+        "id": "travel",
+        "name": "Travel",
+        "line": "I enjoy the planning as much as the trip: routes, dates and all the moving pieces."
+      },
+      {
+        "id": "events",
+        "name": "Events",
+        "line": "From a birthday party at home to a day or more with several activities. I do the research and the plan, coordinate the people and teams involved, and sort it out when something goes wrong."
+      },
+      {
+        "id": "training",
+        "name": "Stat grinding",
+        "line": "Gym and strength training, running, and a little bouldering. STR, DEX and CON don't level themselves."
+      },
+      {
+        "id": "games",
+        "name": "Games, board games and TTRPGs",
+        "line": "Player and game master. Running a session is a lot like running a meeting: prepare well, keep it moving, read the room."
+      },
+      {
+        "id": "projects",
+        "name": "Own projects",
+        "line": "Nether, a community app built around local events, and a planning platform, starting with trips. Both mine, both in progress."
+      }
+    ],
+    "training": [
+      "Become a WordPress Developer, Udemy, 2024",
+      "CS50, Harvard, 2022",
+      "Modern React with Redux, Udemy, 2021",
+      "SEO Toolkit, Semrush, 2021",
+      "SEO for Beginners, Udemy, 2021",
+      "Responsive Web Design, freeCodeCamp, 2021",
+      "Decision and Risk Analysis, University of Gävle, 2020",
+      "Technology programme, Österåkers Gymnasium, 2016–2019"
+    ],
+    "backstory": [
+      "Teenage years in Young Pilots and the air-defence youth section. A first job in the kitchen at McDonald's, then a young swimwear brand where selling on social media turned into running the operations. After upper secondary school, eleven months as an army ranger in Karlsborg.",
+      "Back from the regiment in 2020, after a few months in retail, I got serious about teaching myself to code. Joined Muntra in customer success, picked up more and more development tasks, and studied React every evening as soon as I got home, to keep up with them. By the summer of 2021 I was a developer.",
+      "Then four years as a consultant at Kumpan, with an AI study tool I co-founded on the side, and now SEO and development at Emax Media. The studying never really stopped: right now it's Japanese, and evenings go to my own projects, a community app, a planning platform and a plugin of AI skills I use across them."
+    ]
+  },
+  "recommendations": [
+    {
+      "text": "One of Filip's best qualities is his willingness to evolve and constantly learn new skills. With customers, Filip has proven several times that he is passionate about providing a high level of customer service through excellent interpersonal skills and a humble personality.",
+      "name": "Pontus Green",
+      "role": "Co-founder and CEO, Muntra",
+      "source": "Muntra"
+    },
+    {
+      "text": "I'd gladly recommend Filip Heinel as a colleague, subordinate and manager.",
+      "name": "Daniel Sjögren",
+      "role": "Founder, Bright Swimwear",
+      "source": "Bright Swimwear"
+    },
+    {
+      "text": "Filip is committed, meticulous, and has a high motivation level and drive. He always strives to fulfill his tasks with the best possible results.",
+      "name": "Pontus Green",
+      "role": "Co-founder and CEO, Muntra",
+      "source": "Muntra"
+    },
+    {
+      "text": "Heinel is creative and idea rich, he likes to look outside the box for solutions and has a need to find all the possible perspectives on a problem.",
+      "name": "Daniel Sjögren",
+      "role": "Founder, Bright Swimwear",
+      "source": "Bright Swimwear"
+    },
+    {
+      "text": "He handled what was an immense amount of work, stress and pressure better than most would have.",
+      "name": "Daniel Sjögren",
+      "role": "Founder, Bright Swimwear",
+      "source": "Bright Swimwear"
+    }
+  ]
+}

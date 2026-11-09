@@ -1,0 +1,22 @@
+{
+  "name": "mcp-servers",
+  "private": true,
+  "type": "module",
+  "description": "Model Context Protocol servers by Filip Heinel",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "npm test --workspaces",
+    "typecheck": "tsc --noEmit -p packages/heinel-dev && tsc --noEmit -p packages/sl"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.2"
+  }
+}

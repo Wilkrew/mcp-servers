@@ -1,0 +1,217 @@
+[
+ {
+  "id": 102,
+  "gid": 9091001000000102,
+  "name": "Styrsvik",
+  "note": "Runmarö",
+  "lat": 59.2802666088178,
+  "lon": 18.7313783519481
+ },
+ {
+  "id": 1002,
+  "gid": 9091001000001002,
+  "name": "Centralen",
+  "abbreviation": "CEN",
+  "lat": 59.331136036994,
+  "lon": 18.0576584245687
+ },
+ {
+  "id": 1016,
+  "gid": 9091001000001016,
+  "name": "Kungsträdgården",
+  "note": "Hamngatan/Kungsträdgårdsgatan",
+  "lat": 59.3326928264964,
+  "lon": 18.0709427042148
+ },
+ {
+  "id": 1080,
+  "gid": 9091001000001080,
+  "name": "Stockholm City",
+  "abbreviation": "SCI",
+  "lat": 59.3310033102155,
+  "lon": 18.0592920942299
+ },
+ {
+  "id": 9001,
+  "gid": 9091001000009000,
+  "name": "T-Centralen",
+  "abbreviation": "TCE",
+  "lat": 59.3313754153065,
+  "lon": 18.0604334292973
+ },
+ {
+  "id": 9117,
+  "gid": 9091001000009116,
+  "name": "Odenplan",
+  "abbreviation": "ODP",
+  "lat": 59.3429034949229,
+  "lon": 18.0491023996295
+ },
+ {
+  "id": 9119,
+  "gid": 9091001000009120,
+  "name": "Hötorget",
+  "abbreviation": "HÖT",
+  "lat": 59.3355274414545,
+  "lon": 18.0638723461329
+ },
+ {
+  "id": 9189,
+  "gid": 9091001000009188,
+  "name": "Gullmarsplan",
+  "abbreviation": "GUP",
+  "lat": 59.2984218698272,
+  "lon": 18.0809364762737
+ },
+ {
+  "id": 9191,
+  "gid": 9091001000009192,
+  "name": "Medborgarplatsen",
+  "abbreviation": "MBP",
+  "lat": 59.3142896936717,
+  "lon": 18.0734300675445
+ },
+ {
+  "id": 9192,
+  "gid": 9091001000009192,
+  "name": "Slussen",
+  "abbreviation": "SLU",
+  "lat": 59.3203176773338,
+  "lon": 18.0724531524889
+ },
+ {
+  "id": 9193,
+  "gid": 9091001000009192,
+  "name": "Gamla stan",
+  "abbreviation": "GAS",
+  "lat": 59.3230154032428,
+  "lon": 18.0681902578054
+ },
+ {
+  "id": 9204,
+  "gid": 9091001000009204,
+  "name": "Tekniska högskolan",
+  "abbreviation": "TEH",
+  "lat": 59.3455476647756,
+  "lon": 18.0717109678536
+ },
+ {
+  "id": 9208,
+  "gid": 9091001000009208,
+  "name": "Slussen",
+  "note": "ersättningstrafik",
+  "lat": 59.3183355082271,
+  "lon": 18.079747213613
+ },
+ {
+  "id": 9307,
+  "gid": 9091001000009308,
+  "name": "Stadshagen",
+  "abbreviation": "SHA",
+  "lat": 59.335231502435,
+  "lon": 18.0182952570246
+ },
+ {
+  "id": 9325,
+  "gid": 9091001000009324,
+  "name": "Sundbyberg",
+  "abbreviation": "SBG",
+  "lat": 59.3608711069539,
+  "lon": 17.9714916630653
+ },
+ {
+  "id": 9340,
+  "gid": 9091001000009340,
+  "name": "Kungsträdgården",
+  "abbreviation": "KTG",
+  "lat": 59.3307990179729,
+  "lon": 18.0733386335906
+ },
+ {
+  "id": 9506,
+  "gid": 9091001000009506,
+  "name": "Sollentuna",
+  "abbreviation": "SOL",
+  "lat": 59.4295917697502,
+  "lon": 17.9481892222135
+ },
+ {
+  "id": 320,
+  "gid": 9091001000000320,
+  "name": "Klara Mälarstrand",
+  "note": "båt",
+  "lat": 59.327673534149,
+  "lon": 18.0580883220693
+ },
+ {
+  "id": 1000,
+  "gid": 9091001000001000,
+  "name": "Sergels torg",
+  "abbreviation": "SET",
+  "lat": 59.3329694318861,
+  "lon": 18.0651637302247
+ },
+ {
+  "id": 1003,
+  "gid": 9091001000001004,
+  "name": "Vattugatan",
+  "abbreviation": "VAT",
+  "lat": 59.3297122542949,
+  "lon": 18.0610613177775
+ },
+ {
+  "id": 1004,
+  "gid": 9091001000001004,
+  "name": "Tegelbacken",
+  "abbreviation": "TEB",
+  "lat": 59.3285407510154,
+  "lon": 18.0623367882377
+ },
+ {
+  "id": 1005,
+  "gid": 9091001000001004,
+  "name": "Kungsgatan / Vasagatan",
+  "lat": 59.3333780243916,
+  "lon": 18.0568230350909
+ },
+ {
+  "id": 1006,
+  "gid": 9091001000001006,
+  "name": "Blekholmsterrassen",
+  "abbreviation": "BHT",
+  "lat": 59.331076254985,
+  "lon": 18.0522767912804
+ },
+ {
+  "id": 1007,
+  "gid": 9091001000001008,
+  "name": "Cityterminalen",
+  "note": "på Kungsbron",
+  "lat": 59.3331050623113,
+  "lon": 18.0543967339784
+ },
+ {
+  "id": 1013,
+  "gid": 9091001000001012,
+  "name": "Oxtorgsgatan",
+  "abbreviation": "OTG",
+  "lat": 59.3347488624134,
+  "lon": 18.0668261782723
+ },
+ {
+  "id": 1040,
+  "gid": 9091001000001040,
+  "name": "Norra Bantorget",
+  "abbreviation": "NBT",
+  "lat": 59.3352345634913,
+  "lon": 18.0553635620933
+ },
+ {
+  "id": 1205,
+  "gid": 9091001000001204,
+  "name": "Stadshuset",
+  "abbreviation": "SAH",
+  "lat": 59.3279908587666,
+  "lon": 18.0541466708994
+ }
+]

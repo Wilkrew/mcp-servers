@@ -1,0 +1,57 @@
+[
+ {
+  "created": "2026-11-06T16:33:45.89+01:00",
+  "deviation_case_id": 13238138,
+  "message_variants": [
+   {
+    "details": "Försening på cirka 5 minuter för tunnelbanans gröna linje 17 från Gullmarsplan kl 16:28 mot Hässelby strand på grund av trafikhändelse.",
+    "header": "Försenad avgång mot Hässelby strand",
+    "language": "sv",
+    "scope_alias": "Tunnelbanans gröna linje 17"
+   }
+  ],
+  "modified": "2026-11-06T16:33:45.89+01:00",
+  "priority": {
+   "importance_level": 5,
+   "influence_level": 5,
+   "urgency_level": 1
+  },
+  "publish": {
+   "from": "2026-11-06T16:33:45.873+01:00",
+   "upto": "2026-11-06T17:33:00+01:00"
+  },
+  "scope": {
+   "lines": [
+    {
+     "designation": "17",
+     "group_of_lines": "tunnelbanans gröna linje",
+     "id": 17,
+     "name": "Gröna linjen",
+     "transport_authority": 1,
+     "transport_mode": "METRO"
+    }
+   ],
+   "stop_areas": [
+    {
+     "id": 1551,
+     "name": "Gullmarsplan",
+     "transport_authority": 1,
+     "type": "METROSTN"
+    },
+    {
+     "id": 1051,
+     "name": "T-Centralen",
+     "transport_authority": 1,
+     "type": "METROSTN"
+    },
+    {
+     "id": 1331,
+     "name": "Hässelby strand",
+     "transport_authority": 1,
+     "type": "METROSTN"
+    }
+   ]
+  },
+  "version": 1
+ }
+]
