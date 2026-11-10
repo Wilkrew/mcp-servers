@@ -58,7 +58,7 @@ export function chunks(s: Site = site): Chunk[] {
     }
   }
   for (const g of s.skills.groups) out.push({ id: `skills:${g.id}`, title: `Stack: ${g.label}`, text: g.items.join(', '), url: `${home}/#stack` })
-  out.push({ id: 'skills:training', title: 'Courses and training', text: s.skills.training, url: `${home}/#stack` })
+  out.push({ id: 'skills:training', title: 'Courses and training', text: s.skills.training.join(' '), url: `${home}/#stack` })
 
   const sheet = `${home}/sheet`
   out.push({ id: 'sheet:origin', title: 'Origin story', text: text(s.sheet.origin, ...s.sheet.backstory), url: sheet })
