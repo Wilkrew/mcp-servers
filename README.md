@@ -12,6 +12,22 @@ you ── "Has Filip used vector search?" ──▶ assistant ──search─�
 you ── "Next train from Odenplan?" ──────▶ assistant ──get_departures──▶ sl ──▶ SL API
 ```
 
+## Try it without installing
+
+The `heinel-dev` server also runs on heinel.dev itself, as a stateless Streamable HTTP endpoint:
+
+```text
+https://heinel.dev/mcp
+```
+
+In Claude, add it as a custom connector with that URL. In Claude Code:
+
+```bash
+claude mcp add --transport http heinel-dev https://heinel.dev/mcp
+```
+
+The hosted copy is built from the site's own content files, so it answers from the same text as the pages. It's read-only, keeps no sessions and is rate-limited.
+
 ## Quick start
 
 Needs Node.js 22.18 or later. There's no build step: Node runs the TypeScript directly.

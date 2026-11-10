@@ -19,6 +19,8 @@ Ask your AI assistant about my work. The server answers from the public content 
 
 ## Run it
 
+Hosted, with nothing to install: `https://heinel.dev/mcp` (see the root README).
+
 Locally, over stdio (see the root README for client setup):
 
 ```bash
