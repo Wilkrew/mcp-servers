@@ -5,7 +5,10 @@
 // Only what the public site shows goes in: visible roles and projects, the
 // public case pages, and contact details the site itself publishes. Hidden
 // entries, the unlisted delivery case and the birthday on the sheet stay out.
-// Run it again whenever the site's content changes.
+// The same shape as lib/mcp/site.ts in the site repo (the hosted endpoint at
+// heinel.dev/mcp); keep the two in step. Run it on every merge to the site's
+// master branch (the site repo's AGENTS.md says so, and a daily check there
+// reports drift).
 
 import { execFileSync } from 'node:child_process'
 import { writeFileSync } from 'node:fs'
@@ -16,13 +19,14 @@ const site = resolve(process.argv[2] ?? '../heinel-site')
 const load = async (name: string) => import(pathToFileURL(`${site}/content/${name}.ts`).href)
 
 const { default: profile } = await load('profile')
-const { siteUrl } = await load('meta')
+const { siteUrl, siteUpdated } = await load('meta')
 const { default: experience } = await load('experience')
 const { visibleProjects } = await load('projects')
 const { default: skillGroups, training } = await load('skills')
 const { default: suntarbetsliv } = await load('suntarbetsliv')
 const { default: methods } = await load('methods')
 const { default: nether } = await load('nether')
+const { default: murderhouse } = await load('murderhouse')
 const { discreet } = await load('delivery')
 const { default: sheet } = await load('sheet')
 const { homeQuotes, sheetQuotes } = await load('recommendation')
@@ -42,7 +46,7 @@ for (const q of [...homeQuotes, ...sheetQuotes] as Quote[]) quotes.set(q.text, q
 const { card: _card, metaDescription: _meta, ...delivery } = discreet
 
 const data = {
-  source: { site: siteUrl, commit, note: 'Generated from the public content of heinel.dev. Do not edit by hand.' },
+  source: { site: siteUrl, updated: siteUpdated, commit, note: 'Generated from the public content of heinel.dev. Do not edit by hand.' },
   profile: {
     name: profile.name,
     location: profile.location,
@@ -87,7 +91,8 @@ const data = {
     suntarbetsliv: { url: `${siteUrl}/suntarbetsliv`, ...suntarbetsliv, links: links(suntarbetsliv.links) },
     'ai-skills': { url: `${siteUrl}/methods`, ...methods },
     delivery: { url: `${siteUrl}/delivery`, ...delivery },
-    nether: { url: `${siteUrl}/nether`, ...nether }
+    nether: { url: `${siteUrl}/nether`, ...nether },
+    murderhouse: { url: `${siteUrl}/murderhouse`, ...murderhouse, links: links(murderhouse.links) }
   },
   skills: { groups: skillGroups, training },
   sheet: {
