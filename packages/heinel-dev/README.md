@@ -43,6 +43,8 @@ npm run serve
 npm run export-site -- ../heinel-site
 ```
 
+It's re-exported on every merge to the site's master branch, and a daily check in the site repo reports when the two differ. The shape is the same as the site's own hosted endpoint (`lib/mcp/site.ts`), so a change to one goes into the other.
+
 It holds only what the public site shows: visible roles and projects, the public case pages, and the contact details the site publishes. Hidden entries, unlisted pages and the date of birth stay out, and a test checks for phone numbers and unlisted pages.
 
 The search is a small BM25 index over about 80 chunks: one per role, project, case section and sheet entry. Matching ignores å, ä and ö, so "affarsvarlden" finds Affärsvärlden.

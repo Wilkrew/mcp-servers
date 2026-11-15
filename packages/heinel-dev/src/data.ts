@@ -51,6 +51,7 @@ export function chunks(s: Site = site): Chunk[] {
       ['steps', lines(c.steps)],
       ['rules', lines(c.rules)],
       ['engineering', lines(c.engineering)],
+      ['left out', text(c.refuses)],
       ['result', text(c.result, c.differently, c.origin, c.boundary)]
     ]
     for (const [section, body] of lists) {

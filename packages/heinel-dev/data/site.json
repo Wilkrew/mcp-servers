@@ -1,7 +1,8 @@
 {
   "source": {
     "site": "https://heinel.dev",
-    "commit": "6b90075",
+    "updated": "2026-11-14",
+    "commit": "b0e6844",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -401,6 +402,24 @@
         "WebCrypto",
         "Cloudflare Workers"
       ]
+    },
+    {
+      "id": "murderhouse",
+      "title": "Murderhouse Table Companion",
+      "kind": "Personal project",
+      "summary": "A companion site for Murderhouse, my friend Emma Milerud Sundström's horror roleplaying game: the rules at hand, guided character creation, live character sheets and a view of the whole party, for one gaming group and free to run.",
+      "tags": [
+        "JavaScript",
+        "Supabase",
+        "Vercel"
+      ],
+      "url": "https://heinel.dev/murderhouse",
+      "links": [
+        {
+          "label": "Open the companion",
+          "url": "https://murderhouse.heinel.dev"
+        }
+      ]
     }
   ],
   "cases": {
@@ -720,12 +739,11 @@
       "title": "Nether",
       "oneLiner": "A discretion-first community built around events in the cities you choose: contact on your terms, trust that members earn from each other, and every safety tool free.",
       "premise": [
-        "Dating apps and niche community platforms leave a lot of room to do better. Safety often falls on whoever gets contacted, and the tools that keep people safe often cost extra. Nether starts with gender, sexuality and relationship minorities in Sweden, and is meant to work for everyone else too.",
-        "Nether is my attempt to change that. Safety comes in layers: consent before contact, visibility each person controls, and members who can vouch for each other. The business model has to pay for running and moderating a safe platform, without tricks that work against the people using it.",
-        "And it's made for people, not users. Each person decides how visible they are, what contact they accept, which cities they follow and how much of themselves they show, and it works fully for people who never show their face.",
+        "On dating apps and community platforms, safety often falls on whoever gets contacted, and the tools that keep people safe often cost extra. Nether starts with gender, sexuality and relationship minorities in Sweden, and is meant to work for everyone else too.",
+        "Safety comes in layers: consent before contact, visibility each person controls, and members who vouch for each other. Each person decides how visible they are, what contact they accept, which cities they follow and how much of themselves they show, and it works fully for people who never show their face. The business model has to pay for running and moderating a safe platform, without tricks that work against the people using it.",
         "Some apps and communities already get parts of this right, and I'd rather build on that with them than compete."
       ],
-      "role": "My own project. I designed and built it on my own.",
+      "role": "My own project, and all of it is mine: the product and its safety model, the business model, the design and the code.",
       "constraints": [
         "Contact follows rules each member sets, and only members who opt in appear in the card stack.",
         "Explicit photos have to stay hidden from anyone who hasn't chosen to see them.",
@@ -785,32 +803,22 @@
         },
         {
           "id": "inbox",
-          "name": "Inbox",
-          "line": "Messages are text only, with no photos or link previews, and sending is paced."
-        },
-        {
-          "id": "notices",
-          "name": "Notifications",
-          "line": "A notification says that something happened. It never includes the message itself."
+          "name": "Messages",
+          "line": "Text only, with no photos or link previews, and sending is paced. A notification says that something happened and never includes the message itself."
         },
         {
           "id": "leave",
-          "name": "Quick exit",
-          "line": "One tap takes you away to a neutral page."
-        },
-        {
-          "id": "delete",
-          "name": "Deleting",
-          "line": "Deleting your account is one confirmed action, and it removes everything."
+          "name": "Leaving",
+          "line": "One tap takes you away to a neutral page, and deleting your account is one confirmed action that removes everything."
         }
       ],
-      "refuses": "I left out the photo-and-distance first impression, and kept each screen to a few clear choices. The interface stays calm, in three looks, Classic, Pride and Edge, each in three intensities. Meaning is written out, so it never depends on colour or an icon alone.",
+      "refuses": "I left out the photo-and-distance first impression, and kept each screen to a few clear choices.",
       "engineering": [
         "The app is TypeScript on Next.js (App Router) and React 19. Data is in PostgreSQL, accessed through Drizzle. Sign-in is a magic link via Better Auth, and the rate limits are stored in the database.",
         "The rule modules decide who may take part, when a message is allowed, when a photo stays blurred, how one member can vouch for another, who is in a private group, and which pages a search engine may list.",
-        "Themes are applied in the browser: colour and intensity tokens, and icons drawn as strokes. I test the looks and intensities with Playwright and axe against WCAG 2.2 AA, plus contrast unit tests.",
+        "The interface stays calm, in three looks, Classic, Pride and Edge, each in three intensities, applied in the browser as colour and intensity tokens, with icons drawn as strokes. Meaning is written out, so it never depends on colour or an icon alone. I test the looks and intensities with Playwright and axe against WCAG 2.2 AA, plus contrast unit tests.",
         "Search engines are kept out unless a page is explicitly allowed, and an image file is not sent until the viewer is allowed to see it.",
-        "Automated tests cover the safety rules, and an accessibility scan runs on about 20 pages."
+        "More than 150 automated tests cover the safety rules and the logic around them, and an accessibility scan runs on about 20 pages."
       ],
       "result": "In testing, not launched. Before launch: EU hosting, file storage on Cloudflare R2, a mail provider, payment for membership, a privacy law review and a manual screen-reader pass. I'm also exploring a link with my planning platform, so hosts can plan an event's run-of-show, tasks, venue and budget there, while invitations, addresses and attendees stay in Nether.",
       "tags": [
@@ -820,6 +828,100 @@
         "Drizzle",
         "TypeScript",
         "Better Auth"
+      ]
+    },
+    "murderhouse": {
+      "url": "https://heinel.dev/murderhouse",
+      "title": "Murderhouse Table Companion",
+      "oneLiner": "Rules, character creation and live character sheets for Murderhouse, my friend Emma Milerud Sundström's horror roleplaying game. Built for our table, live, and free to run.",
+      "links": [
+        {
+          "label": "Open the companion",
+          "url": "https://murderhouse.heinel.dev"
+        }
+      ],
+      "linksNote": "Invite only: I create each player's account.",
+      "premise": [
+        "Murderhouse is a tabletop roleplaying game by Emma Milerud Sundström, a homage to the slasher films of the ’80s, ’90s and early 2000s. Our group plays it from her draft rulebook, about 90 pages, with paper character sheets.",
+        "Making a character meant working through tables and arithmetic, and a chase meant keeping track of who was where while everyone rolled. I wanted one place for the table: the rules, a character in a few minutes, sheets that follow you to your phone, and the dice, without changing how the game is played."
+      ],
+      "role": "A personal project for my own gaming group. I did everything outside the game itself: the product, the design, the code, hosting and security, and the players' accounts. The game, its rules and its text are Emma's.",
+      "constraints": [
+        "Emma's rulebook is an unreleased draft, so the rules may only reach signed-in players.",
+        "It has to cost nothing to run.",
+        "The table keeps its real dice, so the site never has to roll for you."
+      ],
+      "decisions": [
+        {
+          "name": "Check before you serve",
+          "line": "The app carries the rules, so a small middleware asks Supabase whether the visitor is signed in before sending it. If Supabase doesn't answer, nothing is sent: it fails closed."
+        },
+        {
+          "name": "The party, not the secrets",
+          "line": "Everyone at the table can see everyone's characters, but a database function leaves out each character's secret and private notes, and only the owner can change a character."
+        },
+        {
+          "name": "AI reads, the player decides",
+          "line": "In the Claude version, a player can photograph a filled-in paper sheet and Claude fills in the character form. It's told to leave out what it can't read rather than guess, and the player checks it and fixes anything before saving."
+        },
+        {
+          "name": "Real dice stay real",
+          "line": "An Own rolls switch lets players type in what their real dice show wherever the page would otherwise roll, so the site helps the game without changing it."
+        }
+      ],
+      "rules": [
+        {
+          "id": "rules",
+          "name": "Rules at hand",
+          "line": "All the rules, in a shorter version of Emma's rulebook, with contents and search."
+        },
+        {
+          "id": "create",
+          "name": "A character in minutes",
+          "line": "Seven guided steps that explain each choice and do the maths."
+        },
+        {
+          "id": "sheets",
+          "name": "Sheets for play",
+          "line": "Stress, Vitality, wounds, conditions and gear, saved to the player's account and on every device."
+        },
+        {
+          "id": "party",
+          "name": "The whole party",
+          "line": "Everyone's characters on one screen, refreshed every 20 seconds while it's open."
+        },
+        {
+          "id": "chase",
+          "name": "Chases",
+          "line": "A tracker for who's ahead, with the odds shown before each roll."
+        },
+        {
+          "id": "dice",
+          "name": "Dice",
+          "line": "A dice tray for checks, saves and any other roll."
+        },
+        {
+          "id": "more",
+          "name": "And the rest",
+          "line": "Eight looks, from pencil and paper to VHS tape; a short guided tour on the first sign-in; and character codes that move a character between the two versions or to another player."
+        }
+      ],
+      "refuses": "No framework and no bundler: one file is easier to change and to run in both places. No live sync between devices: the party view refreshes on a timer, which is enough at a table. No public sign-up and no email: Supabase's free email only reaches the project's own team, so I create accounts with a starting password that players change in the app. Reading a photo of a paper sheet stays in the Claude version, because on the website it would mean paying for an AI service.",
+      "engineering": [
+        "One file, two homes: plain HTML, CSS and JavaScript in a single file that runs both as a Claude artifact and as the website. A storage layer picks Claude's database, Supabase or the browser, depending on where it runs, and a small Node script wraps the file for the website.",
+        "Vercel Routing Middleware checks every request: the Supabase sign-in, and an optional site password kept as a keyed hash in an HttpOnly cookie, because Vercel's own password protection is paid.",
+        "Supabase handles sign-in and stores each character as JSON in Postgres. Row-level security limits every query to the player's own rows, and a security-definer function returns the party without secrets or private notes. Text from other players is escaped and numbers are checked before anything is shown.",
+        "Automated tests with Node's test runner cover the middleware and the build. Playwright and axe check the pages against WCAG 2.2 AA at 320, 375 and 1280 px, in light and dark mode and in several looks, and I check keyboard use.",
+        "I built it with Claude, guided by the design, accessibility and writing skills in my methods plugin. The repository documents setup, operations, architecture and development."
+      ],
+      "result": "Live for our group, invite only, with nothing to pay for hosting, the database or DNS. Visitors without an account see only the landing page.",
+      "credit": "Murderhouse is created by Emma Milerud Sundström. It is an independent production based on the Mothership® Sci-Fi Horror Role Playing Game by Tuesday Knight Games, published under license. MOTHERSHIP® is a registered trademark of Tuesday Knight Games. The companion isn't an official Murderhouse product.",
+      "tags": [
+        "JavaScript",
+        "Supabase",
+        "Postgres",
+        "Vercel",
+        "WCAG 2.2"
       ]
     }
   },
