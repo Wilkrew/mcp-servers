@@ -19,7 +19,7 @@ When a name matches more than one stop, `get_departures` says which stop it used
 npm start
 ```
 
-See the root README for adding it to Claude Code or Claude Desktop.
+See the root README for adding it to Claude Code or Claude Desktop. A hosted copy runs at `https://heinel.dev/sl/mcp`, with nothing to install.
 
 ## Behaviour
 
@@ -35,4 +35,4 @@ See the root README for adding it to Claude Code or Claude Desktop.
 
 ## Data
 
-Data from SL through Trafiklab. See SL's [licence terms](https://www.trafiklab.se/sv/api/other-apis/sl/licence/).
+Data from SL through Trafiklab. SL's [licence terms](https://www.trafiklab.se/sv/api/other-apis/sl/licence/) ask every service to credit Trafiklab, so each answer has a `source` field, "Based on information retrieved from Trafiklab.se (SL).", and the server's instructions ask the assistant to pass it on. Lists come back as `{ results, source }`.

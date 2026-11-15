@@ -14,19 +14,23 @@ you ── "Next train from Odenplan?" ──────▶ assistant ──get
 
 ## Try it without installing
 
-The `heinel-dev` server also runs on heinel.dev itself, as a stateless Streamable HTTP endpoint:
+Both servers also run on heinel.dev itself, as stateless Streamable HTTP endpoints:
 
 ```text
-https://heinel.dev/mcp
+https://heinel.dev/mcp       heinel-dev
+https://heinel.dev/sl/mcp    sl
 ```
 
-In Claude, add it as a custom connector with that URL. In Claude Code:
+In Claude, add either as a custom connector with its URL. In Claude Code:
 
 ```bash
 claude mcp add --transport http heinel-dev https://heinel.dev/mcp
+claude mcp add --transport http sl https://heinel.dev/sl/mcp
 ```
 
-The hosted copy is built from the site's own content files, so it answers from the same text as the pages. It's read-only, keeps no sessions and is rate-limited.
+- The hosted `heinel-dev` is built from the site's own content files, so it answers from the same text as the pages.
+- The hosted `sl` has the same tools as the package and calls SL live, through one cache per server process, so repeated questions reach SL once.
+- Both are read-only, keep no sessions and are rate-limited (60 requests a minute per IP).
 
 ## Quick start
 

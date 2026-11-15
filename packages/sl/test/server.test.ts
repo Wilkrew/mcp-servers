@@ -82,7 +82,8 @@ test('departures by stop name, shaped and with filters passed to SL', async () =
 
 test('an ambiguous name says which stop it used and lists the rest', async () => {
   const res = await call('find_stop', { query: 'kungstradgarden' })
-  assert.equal(res.data.length, 2)
+  assert.equal(res.data.results.length, 2)
+  assert.match(res.data.source, /Trafiklab\.se/)
   const unknown = await call('get_departures', { stop: 'Atlantis' })
   assert.equal(unknown.isError, true)
   const missing = await call('get_departures', { stop: '1234567' })
