@@ -53,6 +53,18 @@ test('work links to its case studies', async () => {
   assert.match(c.data.title, /Friskfaktorlabbet/)
 })
 
+test('every case can be fetched, and the newer ones are searchable', async () => {
+  for (const id of Object.keys(site.cases) as (keyof typeof site.cases)[]) {
+    const c = await call('get_case', { case: id })
+    assert.equal(c.isError, false, id)
+    assert.equal(c.data.url, site.cases[id].url, id)
+  }
+  const mh = await call('search', { query: 'Murderhouse character sheets' })
+  assert.match(mh.data.results[0].id, /murderhouse/)
+  const leftOut = await call('search', { query: 'photo-and-distance first impression' })
+  assert.ok(leftOut.data.results.some((r: { id: string }) => r.id === 'case:nether#left out'), 'what a case left out is searchable')
+})
+
 test('search finds the right piece and links to it', async () => {
   const { data } = await call('search', { query: 'chatbot vector search' })
   assert.ok(data.results.length > 0)
