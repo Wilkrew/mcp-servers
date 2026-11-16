@@ -20,8 +20,23 @@ function json(value: unknown): CallToolResult {
   return { content: [{ type: 'text', text: JSON.stringify(value, null, 2) }] }
 }
 
+/**
+ * Who this server is, for clients that show it (MCP 2025-11-25: title, websiteUrl, icons).
+ * The icons are heinel.dev's own app icons, the same as the hosted server at heinel.dev/mcp.
+ */
+export const SERVER_INFO = {
+  name: 'heinel-dev',
+  title: 'heinel.dev',
+  version: '0.1.0',
+  websiteUrl: 'https://heinel.dev',
+  icons: [
+    { src: 'https://heinel.dev/icon-192.png', mimeType: 'image/png', sizes: ['192x192'] },
+    { src: 'https://heinel.dev/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }
+  ]
+}
+
 export function createServer(): McpServer {
-  const server = new McpServer({ name: 'heinel-dev', version: '0.1.0' }, { instructions: INSTRUCTIONS })
+  const server = new McpServer(SERVER_INFO, { instructions: INSTRUCTIONS })
 
   server.registerTool('about', {
     title: 'About Filip',

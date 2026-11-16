@@ -64,8 +64,25 @@ export function shapeDeviation(d: Deviation) {
   }
 }
 
+/**
+ * Who this server is, for clients that show it (MCP 2025-11-25: title, websiteUrl, icons).
+ * The icon is a train drawn for heinel.dev in its own colours, not SL's logo: this server
+ * isn't SL's. It's hosted on heinel.dev, as for the hosted copy at heinel.dev/sl/mcp.
+ */
+export const SERVER_INFO = {
+  name: 'sl-departures',
+  title: 'SL departures',
+  version: '0.1.0',
+  websiteUrl: 'https://github.com/Wilkrew/mcp-servers/tree/main/packages/sl',
+  icons: [
+    { src: 'https://heinel.dev/mcp-icons/sl-icon.svg', mimeType: 'image/svg+xml', sizes: ['any'] },
+    { src: 'https://heinel.dev/mcp-icons/sl-icon-192.png', mimeType: 'image/png', sizes: ['192x192'] },
+    { src: 'https://heinel.dev/mcp-icons/sl-icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }
+  ]
+}
+
 export function createServer(api = new SlApi()): McpServer {
-  const server = new McpServer({ name: 'sl-departures', version: '0.1.0' }, { instructions: INSTRUCTIONS })
+  const server = new McpServer(SERVER_INFO, { instructions: INSTRUCTIONS })
 
   async function resolve(stop: string): Promise<{ site: Site, others: Site[] } | string> {
     const sites = await api.sites()

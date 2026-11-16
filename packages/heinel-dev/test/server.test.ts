@@ -99,6 +99,8 @@ test('stateless HTTP handler', async () => {
   assert.equal(res.status, 200)
   const body = await res.json()
   assert.equal(body.result.serverInfo.name, 'heinel-dev')
+  assert.equal(body.result.serverInfo.title, 'heinel.dev')
+  assert.ok(body.result.serverInfo.icons.every((i: { src: string }) => i.src.startsWith('https://heinel.dev/')))
   const get = await handleMcp(new Request('http://localhost/mcp'))
   assert.equal(get.status, 405)
 })
