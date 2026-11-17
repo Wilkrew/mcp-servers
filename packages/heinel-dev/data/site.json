@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-14",
-    "commit": "0795f83",
+    "commit": "dcaa645",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -369,7 +369,7 @@
       "id": "methods",
       "title": "AI skills, maintained like software",
       "kind": "Personal project",
-      "summary": "A personal Claude plugin of 14 researched skills, tested and maintained by subagents and a scheduled agent run, and built like software: CI on every push, a cost budget and versioned releases.",
+      "summary": "A personal Claude plugin of 22 skills, 18 of them researched methods, tested and maintained by subagents and a scheduled agent run, and built like software: CI on every pull request, a cost budget and versioned releases.",
       "tags": [
         "Agentic workflows",
         "Subagents",
@@ -493,7 +493,7 @@
     "ai-skills": {
       "url": "https://heinel.dev/methods",
       "title": "AI skills, maintained like software",
-      "oneLiner": "A personal Claude plugin: 14 researched methods as skills, tested and maintained by subagents and a scheduled agent run. It's built like software, with CI on every push, a cost budget, versioned releases and an export to five other AI agent clients.",
+      "oneLiner": "A personal Claude plugin: 22 skills, 18 of them researched methods, tested and maintained by subagents and a scheduled agent run. It's built like software, with CI on every pull request, a cost budget, versioned releases and an export to five other AI agent clients.",
       "problem": "AI assistants answer confidently, even when they're wrong, and good method gets lost between chats and projects. That means answers someone has to check again, and results that depend on who asked and how. I wanted the methods I rely on to be explicit, sourced and applied the same way every time, without the cost of loading them growing out of hand.",
       "constraints": [
         "Every skill's description loads into every conversation, so each one costs tokens all the time.",
@@ -506,11 +506,11 @@
       "agentic": [
         {
           "name": "A routing eval, run by a subagent",
-          "line": "In every maintenance run, a read-only subagent on a smaller model sees only each skill's name and description, and picks a skill for each of 54 example requests. A wrong pick points to the description that misled it."
+          "line": "In every maintenance run, a read-only subagent on a smaller model sees only each skill's name and description, and picks a skill for each of 113 example requests. A wrong pick points to the description that misled it."
         },
         {
           "name": "Three reviewers, one brief",
-          "line": "Before the latest release, three read-only subagents each reviewed a part of the plugin against the same brief, looking for anything tied to one project or person. Their findings became one plan, and I decided what changed."
+          "line": "Before one release, three read-only subagents each reviewed a part of the plugin against the same brief, looking for anything tied to one project or person. Their findings became one plan, and I decided what changed. New skills get an independent reviewer too, who checks each one against its scored sources."
         },
         {
           "name": "A scheduled maintenance agent",
@@ -536,6 +536,11 @@
           "line": "A 1–5 trust score per claim, built on the Swedish Psychological Defence Agency's “Kolla källan” questions. It scores what a rule says separately from what people actually do."
         },
         {
+          "id": "multilingual",
+          "name": "Multilingual research",
+          "line": "Search where the topic lives: queries in the languages a place, a law or a field works in, translations kept next to the originals, and a line saying which languages were searched."
+        },
+        {
           "id": "decisions",
           "name": "Decision analysis",
           "line": "Multi-criteria scoring with swing weights. People weigh independently, so the first speaker doesn't anchor everyone. A robustness check runs across hundreds of nearby weightings, and the process ends with a pre-mortem."
@@ -556,14 +561,49 @@
           "line": "WCAG 2.2 AA in practice, tested with axe-core plus a keyboard and screen-reader pass."
         },
         {
+          "id": "concepts",
+          "name": "Design concepts",
+          "line": "A few concepts that organise the same content in really different ways, each a working page with the real words, compared side by side. Built on studies of parallel prototyping and design fixation."
+        },
+        {
+          "id": "skins",
+          "name": "Design skins",
+          "line": "New looks on the same structure: colour, type, texture, imagery and motion change, while the layout, words and interactions stay. Every skin stays readable and is a swap, not a rewrite."
+        },
+        {
+          "id": "signatures",
+          "name": "Email signatures",
+          "line": "Signatures that hold up in Gmail, Outlook and Apple Mail: a small table with inline styles, one hosted logo, a plain-text version and dark mode planned from the start, tested with real messages."
+        },
+        {
           "id": "writing",
           "name": "Plain writing",
           "line": "The plain-language standard ISO 24495-1, applied with Swedish klarspråk and plain English: the most important thing first, one idea per sentence, common words."
         },
         {
+          "id": "questionnaires",
+          "name": "Questionnaire design",
+          "line": "Questions people can answer well: one idea per question, neutral wording, balanced scales, a sensible order and length, privacy, and a pilot with a few real people first."
+        },
+        {
+          "id": "presentation",
+          "name": "Self-presentation",
+          "line": "CVs, portfolios and profiles built for a quick first read and a later check: what readers look for first, results instead of duties, formats hiring software can read, and national conventions."
+        },
+        {
+          "id": "teaching",
+          "name": "Teaching and learning",
+          "line": "The learner produces something, then gets feedback: an attempt before the explanation, a ladder of hints instead of answers, retrieval and spacing. It tells learning apart from getting a task done."
+        },
+        {
           "id": "data",
           "name": "Data modelling",
           "line": "Cardinality, keeping data consistent where there are no transactions, concurrency, versioned migrations, and Postgres/Supabase row-level security."
+        },
+        {
+          "id": "testing",
+          "name": "Testing strategy",
+          "line": "What to test and where: start from what would hurt if it broke, test at the cheapest level that catches it, check behaviour, and keep tests trustworthy, flaky, property-based and CI checks included."
         },
         {
           "id": "security",
@@ -605,11 +645,11 @@
       "decisions": [
         {
           "name": "Treat skills as software",
-          "line": "The source lives in GitHub, and every push runs CI in GitHub Actions: the self-test, the export and the cost measurement. The self-test checks structure, versions, references and valid frontmatter, and blocks private names, which it knows only as salted hashes."
+          "line": "The source lives in GitHub, and every pull request and every change to main runs CI in GitHub Actions: the self-test, the export and the cost measurement. The self-test checks structure, versions, references and valid frontmatter, and blocks private names, which it knows only as salted hashes."
         },
         {
           "name": "Evidence first",
-          "line": "Ten of the skills rest on cited research, standards and official guidance, with every source scored 1–5. Before a fact is stored, shared or relied on, Claude checks it at the original source, looks harder at anything implausible and marks what it couldn't confirm."
+          "line": "Seventeen of the skills rest on cited research, standards and official guidance, with every source scored 1–5. Before a fact is stored, shared or relied on, Claude checks it at the original source, looks harder at anything implausible and marks what it couldn't confirm."
         },
         {
           "name": "Checked from outside",
@@ -650,7 +690,7 @@
           "line": "The same skills install in six AI agent clients, Claude among them."
         }
       ],
-      "result": "Fourteen skills, in daily use across my own projects. The part loaded in every conversation comes to about 1,170 tokens, down from about 1,320 before the latest release, even with a skill added.",
+      "result": "Twenty-two skills, in daily use across my own projects. The part loaded in every conversation comes to about 1,490 tokens, inside the budget of 1,500, so each new skill has to earn its place.",
       "tags": [
         "Agentic workflows",
         "Subagents",
