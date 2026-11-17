@@ -38,6 +38,14 @@ async function call(name: string, args: Record<string, unknown> = {}) {
   return { isError: res.isError === true, text, data: res.isError ? null : JSON.parse(text) }
 }
 
+test('the server names itself, with a title and icons on heinel.dev', () => {
+  const info = client.getServerVersion()
+  assert.equal(info?.name, 'sl-departures')
+  assert.equal(info?.title, 'SL departures')
+  assert.ok((info?.icons ?? []).length > 0)
+  assert.ok(info?.icons?.every(i => i.src.startsWith('https://heinel.dev/mcp-icons/')))
+})
+
 test('stop search handles missing å, ä, ö and prefers the plain stop', () => {
   assert.equal(findStops(sites, 'T-Centralen')[0].id, 9001)
   assert.equal(findStops(sites, 'hotorget')[0].name, 'Hötorget')
