@@ -1,5 +1,5 @@
-// Tests against trimmed real responses from SL (6 Nov 2026), served by a fake
-// fetch. They never call SL.
+// Tests against trimmed real responses from SL (6 and 17 Nov 2026), served by
+// a fake fetch. They never call SL.
 
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
@@ -7,7 +7,7 @@ import { readFileSync } from 'node:fs'
 import { Client } from '@modelcontextprotocol/sdk/client/index.js'
 import { InMemoryTransport } from '@modelcontextprotocol/sdk/inMemory.js'
 import { SlApi } from '../src/api.ts'
-import { createServer } from '../src/server.ts'
+import { createServer, shapeLeg } from '../src/server.ts'
 import { findStops, nearby } from '../src/stops.ts'
 
 const fixture = (name: string) => readFileSync(new URL(`./fixtures/${name}`, import.meta.url), 'utf8')
@@ -21,7 +21,19 @@ const fakeFetch = (async (input: string | URL | Request) => {
   let body: string
   if (url.pathname === '/v1/sites') body = fixture('sites.json')
   else if (url.pathname === '/v1/sites/9001/departures') body = fixture('departures-9001.json')
+  else if (url.pathname === '/v1/sites/9117/departures') body = fixture('departures-9117.json')
+  else if (/^\/v1\/sites\/\d+\/departures$/.test(url.pathname)) body = JSON.stringify({ departures: [], stop_deviations: [] })
   else if (url.pathname === '/v1/messages') body = fixture('deviations-9001.json')
+  else if (url.pathname === '/v1/stop-points') {
+    // One made-up stop point whose validity has ended, to check it is left out.
+    const points = JSON.parse(fixture('stop-points.json'))
+    body = JSON.stringify([...points, { ...points.at(-2), id: 99001, designation: 'X', valid: { from: '2020-01-01T00:00:00', to: '2025-06-01T00:00:00' } }])
+  }
+  // The planner answers 200 with only systemMessages when it finds nothing.
+  else if (url.pathname === '/v2/trips' && url.searchParams.get('name_destination') === '9091001000009001') {
+    body = JSON.stringify({ systemMessages: [{ type: 'error', code: -8010, text: '' }, { type: 'error', code: -4000, text: 'no connection found' }] })
+  } else if (url.pathname === '/v2/trips' && url.searchParams.get('type_origin') === 'coord') body = fixture('trips-coord-9302.json')
+  else if (url.pathname === '/v2/trips') body = fixture('trips-9117-9192.json')
   else return new Response('not found', { status: 404 })
   return new Response(body, { status: 200, headers: { 'content-type': 'application/json' } })
 }) as typeof fetch
@@ -64,7 +76,7 @@ test('nearby stops are sorted by distance', () => {
 
 test('every tool is read-only', async () => {
   const { tools } = await client.listTools()
-  assert.deepEqual(tools.map(t => t.name).sort(), ['find_stop', 'get_departures', 'get_disruptions', 'nearby_stops'])
+  assert.deepEqual(tools.map(t => t.name).sort(), ['find_stop', 'get_departures', 'get_disruptions', 'nearby_stops', 'plan_trip', 'stop_layout'])
   for (const t of tools) assert.equal(t.annotations?.readOnlyHint, true)
 })
 
@@ -113,6 +125,148 @@ test('disruptions for a stop, with fair-use caching', async () => {
   clock += 61_000
   await call('get_disruptions', { stop: '9001' })
   assert.equal(requests.filter(r => r.includes('/v1/messages')).length, before + 2, 'fetched again after a minute')
+})
+
+const lastTripUrl = () => new URL(requests.findLast(r => r.includes('/v2/trips'))!)
+const SIGNAL_FAULT = 'Restiden förbi Gullmarsplan kan bli förlängd med upp till 15 minuter pga signalfel. Förseningar och inställda avgångar kan förekomma.'
+
+test('plan_trip sends stop names as journey planner ids, with the asked time and options', async () => {
+  const { data } = await call('plan_trip', {
+    from: 'Odenplan', to: 'slussen', time: '07:45', date: '2026-11-17', arrive_by: true,
+    trips: 1, max_changes: 1, prefer: 'fewest_changes', avoid: ['BUS', 'TRAIN']
+  })
+  const q = lastTripUrl().searchParams
+  assert.equal(lastTripUrl().host, 'journeyplanner.integration.sl.se')
+  assert.equal(q.get('type_origin'), 'any')
+  assert.equal(q.get('name_origin'), '9091001000009117')
+  assert.equal(q.get('name_destination'), '9091001000009192')
+  assert.equal(q.get('itd_date'), '20261117')
+  assert.equal(q.get('itd_time'), '0745')
+  assert.equal(q.get('itd_trip_date_time_dep_arr'), 'arr')
+  assert.equal(q.get('calc_number_of_trips'), '1')
+  assert.equal(q.get('max_changes'), '1')
+  assert.equal(q.get('route_type'), 'leastinterchange')
+  assert.equal(q.get('gen_c'), 'false')
+  assert.equal(q.get('calc_one_direction'), 'true')
+  // SL only honours false when the modes to keep are sent as true.
+  const mot = Object.fromEntries([0, 2, 4, 5, 9, 10, 14, 19].map(n => [n, q.get(`incl_mot_${n}`)]))
+  assert.deepEqual(mot, { 0: 'false', 2: 'true', 4: 'true', 5: 'false', 9: 'true', 10: 'false', 14: 'true', 19: 'false' })
+  assert.equal(data.from.site_id, 9117)
+  assert.equal(data.asked, 'arrive by 07:45 on 2026-11-17')
+  assert.equal(data.trips.length, 1, 'never more trips than asked for')
+
+  await call('plan_trip', { from: 'Odenplan', to: 'Slussen' })
+  assert.equal(lastTripUrl().searchParams.get('incl_mot_2'), null, 'no mode parameters unless something is avoided')
+})
+
+test('plan_trip drops trips SL returns on an avoided mode', async () => {
+  // Both recorded trips are metro only.
+  const res = await call('plan_trip', { from: 'Odenplan', to: 'Slussen', avoid: ['METRO'] })
+  assert.equal(res.isError, true)
+  assert.match(res.text, /that avoids METRO/)
+})
+
+test('plan_trip shapes legs in Stockholm time, with delays, platforms, positions and notices', async () => {
+  const { data } = await call('plan_trip', { from: '9117', to: '9192' })
+  assert.match(data.source, /Trafiklab\.se/)
+  assert.deepEqual(data.trips[0], {
+    departs: '12:18', arrives: '12:25', duration_min: 7, changes: 0, all_live: true, cancelled: false,
+    legs: [{
+      type: 'ride', mode: 'METRO', mode_name: 'Tunnelbana', line: '17', toward: 'Skarpnäck',
+      from: 'Odenplan', platform: '2', platform_position: { lat: 59.342768, lon: 18.048708 },
+      departs: '12:18', delay_min: 3, to: 'Slussen', arrives: '12:25', stops: 5,
+      live: true, cancelled: false, notes: [SIGNAL_FAULT]
+    }]
+  })
+  assert.equal(data.trips[1].legs[0].line, '19')
+  assert.equal(data.trips[1].legs[0].delay_min, 2)
+})
+
+test('plan_trip takes positions as "lat,lon" and shows street walks and changes inside stations', async () => {
+  const { data } = await call('plan_trip', { from: '59.3326, 18.0649', to: 'Kista' })
+  const q = lastTripUrl().searchParams
+  assert.equal(q.get('type_origin'), 'coord')
+  assert.equal(q.get('name_origin'), '18.0649:59.3326:WGS84[dd.ddddd]', 'longitude first for SL')
+  assert.equal(q.get('name_destination'), '9091001000009302')
+  assert.equal(q.get('itd_time'), null, 'no time means leave now')
+  assert.deepEqual(data.from, { lat: 59.3326, lon: 18.0649 })
+
+  const [trip] = data.trips
+  assert.deepEqual([trip.departs, trip.arrives, trip.duration_min, trip.changes, trip.all_live], ['12:22', '12:43', 21, 0, true])
+  assert.deepEqual(trip.legs[0], { type: 'walk', from: 'Sergelgången 31', to: 'T-Centralen', minutes: 2, distance_m: 116, in_station: false })
+  assert.deepEqual(trip.legs[1], { type: 'walk', from: 'T-Centralen', to: 'T-Centralen', minutes: 3, distance_m: null, in_station: true })
+  const metro = trip.legs[2]
+  assert.deepEqual(
+    [metro.line, metro.toward, metro.platform, metro.departs, metro.arrives, metro.stops, metro.delay_min],
+    ['11', 'Akalla', '5', '12:27', '12:43', 8, 0]
+  )
+
+  const far = await call('plan_trip', { from: '57.7,11.97', to: 'Slussen' })
+  assert.equal(far.isError, true)
+  assert.match(far.text, /outside SL's area/)
+})
+
+test('a leg SL marks as cancelled, or without real-time data, says so', () => {
+  const leg = JSON.parse(fixture('trips-9117-9192.json')).journeys[0].legs[0]
+  const cancelled = shapeLeg({ ...leg, realtimeStatus: ['MONITORED', 'TRIP_CANCELLED'] })
+  assert.equal(cancelled.type === 'ride' && cancelled.cancelled, true)
+  assert.equal(cancelled.type === 'ride' && cancelled.delay_min, null)
+  const timetable = shapeLeg({ ...leg, realtimeStatus: undefined, isRealtimeControlled: false, origin: { ...leg.origin, departureTimeEstimated: undefined } })
+  assert.deepEqual(timetable.type === 'ride' && [timetable.live, timetable.delay_min, timetable.departs], [false, 0, '12:16'])
+})
+
+test('plan_trip explains when SL finds nothing, and needs a time to arrive by', async () => {
+  const none = await call('plan_trip', { from: 'Odenplan', to: 'T-Centralen' })
+  assert.equal(none.isError, true)
+  assert.match(none.text, /no connection found/)
+  assert.doesNotMatch(none.text, /-8010/)
+
+  const noTime = await call('plan_trip', { from: 'Odenplan', to: 'Slussen', arrive_by: true })
+  assert.equal(noTime.isError, true)
+  assert.match(noTime.text, /time to arrive by/)
+})
+
+test('stop_layout lists a stop\'s platforms and letters with positions and current lines', async () => {
+  const { data } = await call('stop_layout', { stop: 'Odenplan' })
+  assert.equal(data.stop.site_id, 9117)
+  assert.match(data.source, /Trafiklab\.se/)
+  assert.deepEqual(
+    data.points.map((p: { area: string, area_type: string, designation: string }) => `${p.area} ${p.area_type} ${p.designation}`),
+    [
+      ...['A', 'B', 'C', 'F', 'G', 'H', 'I', 'J', 'K', 'M'].map(l => `Odenplan BUSTERM ${l}`),
+      'Odenplan METROSTN 1', 'Odenplan METROSTN 2', 'Stockholm Odenplan RAILWSTN 1', 'Stockholm Odenplan RAILWSTN 2'
+    ],
+    'other stops, retired OLD positions and expired points are left out'
+  )
+  const at = (area: string, designation: string) =>
+    data.points.find((p: { area_type: string, designation: string }) => p.area_type === area && p.designation === designation)
+
+  const h = at('BUSTERM', 'H')
+  assert.deepEqual(h.lines, [{ line: '53', mode: 'BUS', toward: 'Henriksdalsberget' }])
+  assert.equal(h.next_departure, '12:16')
+  assert.equal(h.type, 'BUSSTOP')
+  assert.equal(h.entrance, false)
+  assert.equal(h.from_centre.direction, 'SW')
+  assert.ok(h.from_centre.distance_m > 30 && h.from_centre.distance_m < 60)
+
+  const metro = at('METROSTN', '2')
+  assert.deepEqual(metro.lines.map((l: { line: string, toward: string }) => `${l.line} ${l.toward}`), ['17 Skarpnäck', '19 Hagsätra'])
+  assert.equal(metro.next_departure, '12:18')
+  assert.equal(metro.entrance, true)
+
+  assert.deepEqual(at('RAILWSTN', '1').lines.map((l: { line: string }) => l.line), ['43', '41'])
+  assert.equal(at('RAILWSTN', '1').from_centre.direction, 'W')
+  const m = at('BUSTERM', 'M')
+  assert.deepEqual([m.lines, m.next_departure, m.from_centre.direction], [[], null, 'W'])
+})
+
+test('stop_layout uses the expanded stop list and fetches stop points once a day', async () => {
+  await call('stop_layout', { stop: '9117' })
+  assert.ok(requests.some(r => r.includes('/v1/sites?expand=true')))
+  assert.equal(requests.filter(r => r.includes('/v1/stop-points')).length, 1)
+  const none = await call('stop_layout', { stop: 'Slussen' })
+  assert.equal(none.isError, true)
+  assert.match(none.text, /no platforms or stop letters for Slussen/)
 })
 
 test('the stop list is fetched once and reused', () => {
