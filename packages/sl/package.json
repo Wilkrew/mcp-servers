@@ -1,15 +1,16 @@
 {
   "name": "sl-departures-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
-  "description": "Real-time departures, stops and disruptions in Stockholm public transport (SL), from SL's open APIs",
+  "description": "Real-time departures, stops, disruptions and trip plans in Stockholm public transport (SL), from SL's open APIs",
   "license": "MIT",
   "bin": {
     "sl-departures-mcp": "src/stdio.ts"
   },
   "scripts": {
     "start": "node --experimental-strip-types src/stdio.ts",
-    "test": "node --experimental-strip-types --test test/*.test.ts"
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "try": "node --experimental-strip-types scripts/try-tool.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",

@@ -1,0 +1,121 @@
+{
+  "systemMessages": [],
+  "journeys": [
+    {
+      "tripDuration": 474,
+      "tripRtDuration": 402,
+      "interchanges": 0,
+      "legs": [
+        {
+          "duration": 402,
+          "origin": {
+            "id": "9025001000001132",
+            "name": "Odenplan, Stockholm",
+            "disassembledName": "2",
+            "type": "platform",
+            "coord": [59.342768, 18.048708],
+            "departureTimePlanned": "2026-11-17T11:16:00Z",
+            "departureTimeEstimated": "2026-11-17T11:18:36Z",
+            "parent": { "id": "9021001001131000", "name": "Odenplan, Stockholm", "disassembledName": "Odenplan", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "2" }
+          },
+          "destination": {
+            "id": "9025001000001012",
+            "name": "Slussen, Stockholm",
+            "disassembledName": "4",
+            "type": "platform",
+            "coord": [59.31962, 18.072235],
+            "arrivalTimePlanned": "2026-11-17T11:23:54Z",
+            "arrivalTimeEstimated": "2026-11-17T11:25:18Z",
+            "parent": { "id": "9021001001011000", "name": "Slussen, Stockholm", "disassembledName": "Slussen", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "4" }
+          },
+          "transportation": {
+            "name": "Tunnelbana tunnelbanans gröna linje 17",
+            "number": "tunnelbanans gröna linje 17",
+            "disassembledName": "17",
+            "product": { "class": 2, "name": "Tunnelbana" },
+            "destination": { "name": "Skarpnäck" }
+          },
+          "stopSequence": [
+            { "name": "Odenplan, Stockholm" },
+            { "name": "Rådmansgatan, Stockholm" },
+            { "name": "Hötorget, Stockholm" },
+            { "name": "T-Centralen, Stockholm" },
+            { "name": "Gamla stan, Stockholm" },
+            { "name": "Slussen, Stockholm" }
+          ],
+          "realtimeStatus": ["MONITORED"],
+          "isRealtimeControlled": true,
+          "infos": [
+            {
+              "priority": "high",
+              "type": "lineInfo",
+              "infoLinks": [
+                { "title": "Restiden förbi Gullmarsplan kan bli förlängd med upp till 15 minuter pga signalfel. Förseningar och inställda avgångar kan förekomma." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tripDuration": 474,
+      "tripRtDuration": 396,
+      "interchanges": 0,
+      "legs": [
+        {
+          "duration": 396,
+          "origin": {
+            "id": "9025001000001132",
+            "name": "Odenplan, Stockholm",
+            "disassembledName": "2",
+            "type": "platform",
+            "coord": [59.342768, 18.048708],
+            "departureTimePlanned": "2026-11-17T11:19:00Z",
+            "departureTimeEstimated": "2026-11-17T11:20:36Z",
+            "parent": { "id": "9021001001131000", "name": "Odenplan, Stockholm", "disassembledName": "Odenplan", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "2" }
+          },
+          "destination": {
+            "id": "9025001000001012",
+            "name": "Slussen, Stockholm",
+            "disassembledName": "4",
+            "type": "platform",
+            "coord": [59.31962, 18.072235],
+            "arrivalTimePlanned": "2026-11-17T11:26:54Z",
+            "arrivalTimeEstimated": "2026-11-17T11:27:12Z",
+            "parent": { "id": "9021001001011000", "name": "Slussen, Stockholm", "disassembledName": "Slussen", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "4" }
+          },
+          "transportation": {
+            "name": "Tunnelbana tunnelbanans gröna linje 19",
+            "number": "tunnelbanans gröna linje 19",
+            "disassembledName": "19",
+            "product": { "class": 2, "name": "Tunnelbana" },
+            "destination": { "name": "Hagsätra" }
+          },
+          "stopSequence": [
+            { "name": "Odenplan, Stockholm" },
+            { "name": "Rådmansgatan, Stockholm" },
+            { "name": "Hötorget, Stockholm" },
+            { "name": "T-Centralen, Stockholm" },
+            { "name": "Gamla stan, Stockholm" },
+            { "name": "Slussen, Stockholm" }
+          ],
+          "realtimeStatus": ["MONITORED"],
+          "isRealtimeControlled": true,
+          "infos": [
+            {
+              "priority": "high",
+              "type": "lineInfo",
+              "infoLinks": [
+                { "title": "Restiden förbi Gullmarsplan kan bli förlängd med upp till 15 minuter pga signalfel. Förseningar och inställda avgångar kan förekomma." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

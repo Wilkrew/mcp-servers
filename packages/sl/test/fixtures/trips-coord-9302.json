@@ -1,0 +1,115 @@
+{
+  "systemMessages": [],
+  "journeys": [
+    {
+      "tripDuration": 1284,
+      "tripRtDuration": 1260,
+      "interchanges": 0,
+      "legs": [
+        {
+          "duration": 120,
+          "distance": 116,
+          "origin": {
+            "id": "coord:2010929:3747368:MRCV:Stockholm, Sergelgången 31:0",
+            "name": "Stockholm, Sergelgången 31",
+            "disassembledName": "Sergelgången 31",
+            "type": "address",
+            "coord": [59.332635, 18.064483],
+            "departureTimePlanned": "2026-11-17T11:22:42Z",
+            "departureTimeEstimated": "2026-11-17T11:22:42Z",
+            "parent": { "id": "placeID:33001080:-1", "name": "Stockholm", "type": "locality" },
+            "properties": {}
+          },
+          "destination": {
+            "id": "18001051|9|1",
+            "name": "T-Centralen, Stockholm",
+            "disassembledName": "T-Centralen",
+            "type": "platform",
+            "coord": [59.332163, 18.063225],
+            "arrivalTimePlanned": "2026-11-17T11:24:42Z",
+            "arrivalTimeEstimated": "2026-11-17T11:24:42Z",
+            "parent": { "id": "9021001001051000", "name": "T-Centralen, Stockholm", "disassembledName": "T-Centralen", "type": "stop" },
+            "properties": { "platform": "1" }
+          },
+          "transportation": { "product": { "class": 100, "name": "footpath" } },
+          "stopSequence": [],
+          "infos": []
+        },
+        {
+          "duration": 180,
+          "origin": {
+            "id": "18001051|9|1",
+            "name": "T-Centralen, Stockholm",
+            "disassembledName": "T-Centralen",
+            "type": "platform",
+            "coord": [59.332163, 18.063225],
+            "departureTimePlanned": "2026-11-17T11:24:42Z",
+            "departureTimeEstimated": "2026-11-17T11:24:42Z",
+            "parent": { "id": "9021001001051000", "name": "T-Centralen, Stockholm", "disassembledName": "T-Centralen", "type": "stop" },
+            "properties": { "platform": "1" }
+          },
+          "destination": {
+            "id": "9025001000003051",
+            "name": "T-Centralen, Stockholm",
+            "disassembledName": "5",
+            "type": "platform",
+            "coord": [59.332451, 18.061994],
+            "arrivalTimePlanned": "2026-11-17T11:27:42Z",
+            "arrivalTimeEstimated": "2026-11-17T11:27:42Z",
+            "parent": { "id": "9021001001051000", "name": "T-Centralen, Stockholm", "disassembledName": "T-Centralen", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "5" }
+          },
+          "transportation": { "product": { "class": 99, "name": "footpath" } },
+          "stopSequence": [{ "name": "T-Centralen, Stockholm" }, { "name": "T-Centralen, Stockholm" }],
+          "infos": []
+        },
+        {
+          "duration": 960,
+          "origin": {
+            "id": "9025001000003051",
+            "name": "T-Centralen, Stockholm",
+            "disassembledName": "5",
+            "type": "platform",
+            "coord": [59.332451, 18.061994],
+            "departureTimePlanned": "2026-11-17T11:27:42Z",
+            "departureTimeEstimated": "2026-11-17T11:27:42Z",
+            "parent": { "id": "9021001001051000", "name": "T-Centralen, Stockholm", "disassembledName": "T-Centralen", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "5" }
+          },
+          "destination": {
+            "id": "9025001000003251",
+            "name": "Kista, Stockholm",
+            "disassembledName": "1",
+            "type": "platform",
+            "coord": [59.402958, 17.942671],
+            "arrivalTimePlanned": "2026-11-17T11:44:06Z",
+            "arrivalTimeEstimated": "2026-11-17T11:43:42Z",
+            "parent": { "id": "9021001003251000", "name": "Kista, Stockholm", "disassembledName": "Kista", "type": "stop" },
+            "properties": { "platform": "1", "platformName": "1" }
+          },
+          "transportation": {
+            "name": "Tunnelbana tunnelbanans blå linje 11",
+            "number": "tunnelbanans blå linje 11",
+            "disassembledName": "11",
+            "product": { "class": 2, "name": "Tunnelbana" },
+            "destination": { "name": "Akalla" }
+          },
+          "stopSequence": [
+            { "name": "T-Centralen, Stockholm" },
+            { "name": "Rådhuset, Stockholm" },
+            { "name": "Fridhemsplan, Stockholm" },
+            { "name": "Stadshagen, Stockholm" },
+            { "name": "Västra skogen, Solna" },
+            { "name": "Solna centrum, Solna" },
+            { "name": "Näckrosen, Sundbyberg" },
+            { "name": "Hallonbergen, Sundbyberg" },
+            { "name": "Kista, Stockholm" }
+          ],
+          "realtimeStatus": ["MONITORED"],
+          "isRealtimeControlled": true,
+          "infos": []
+        }
+      ]
+    }
+  ]
+}
