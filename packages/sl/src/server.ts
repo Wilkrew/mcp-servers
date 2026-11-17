@@ -6,8 +6,8 @@ import { compass, distanceM, findStops, nearby } from './stops.ts'
 
 const LIVE = { readOnlyHint: true, idempotentHint: true, openWorldHint: true } as const
 
-/** SL's licence asks every service to say its data comes from Trafiklab. */
-export const SOURCE = 'Based on information retrieved from Trafiklab.se (SL).'
+/** SL's licence asks every service to say its data comes from Trafiklab, with a link to Trafiklab.se where practical. */
+export const SOURCE = 'Based on information retrieved from Trafiklab.se (SL): https://www.trafiklab.se'
 
 export const INSTRUCTIONS = [
   'Live departures, stops, disruptions and trip plans in Stockholm public transport, from SL\'s open APIs.',
