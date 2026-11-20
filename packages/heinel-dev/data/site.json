@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-14",
-    "commit": "dcaa645",
+    "commit": "13d2789",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -78,7 +78,7 @@
       "id": "emax",
       "company": "Emax Media",
       "title": "SEO Specialist / Developer",
-      "period": "Aug 2026 — present",
+      "period": "Aug 2026 – present",
       "lane": "career",
       "summary": "SEO strategy and delivery for clients from e-commerce and B2B to local service companies. I run the client meetings and own the long-term relationship on my accounts. Between clients I build tools for my own work, some of them AI-assisted.",
       "tags": [
@@ -91,7 +91,7 @@
       "id": "kumpan",
       "company": "Kumpan",
       "title": "Developer / Consultant",
-      "period": "May 2022 — Jun 2026",
+      "period": "May 2022 – Jun 2026",
       "lane": "career",
       "summary": "A Stockholm digital agency, where I spent four years as a consultant.",
       "parts": [
@@ -116,7 +116,7 @@
       "id": "studyclub",
       "company": "Study Club AI",
       "title": "Co-Founder / Full-stack Developer",
-      "period": "Dec 2022 — Apr 2024",
+      "period": "Dec 2022 – Apr 2024",
       "lane": "career",
       "summary": "I co-founded this AI study tool and built it full-stack, on the side of Kumpan. It used RAG to answer from course material and documents users uploaded. We tested it with a handful of teachers, students and people who work with teachers, then closed it. Selling to schools meant public procurement, which made the business case hard, and as an AI wrapper we were racing the AI giants. Without an in with a school or real procurement know-how, it wasn't worth going on. What I took from it: an AI product needs an edge of its own, not just a model behind it.",
       "tags": [
@@ -132,7 +132,7 @@
       "id": "muntra-dev",
       "company": "Muntra",
       "title": "Developer",
-      "period": "Jun 2021 — May 2022",
+      "period": "Jun 2021 – May 2022",
       "lane": "career",
       "summary": "Dental software. I moved from customer success into development and became solely responsible for the frontend of nine codebases, listed under Work. I ran those projects independently, in close cooperation with the CTO, in short Lean startup iterations. I also owned QA, second- and third-line support, and the integrations with X-ray systems and payment terminals. That meant working with customer success, the clinics' own IT and marketing people, and our in-house X-ray integration expert.",
       "tags": [
@@ -147,7 +147,7 @@
       "id": "muntra-csm",
       "company": "Muntra",
       "title": "Customer Success Manager",
-      "period": "Jan 2021 — Jun 2021",
+      "period": "Jan 2021 – Jun 2021",
       "lane": "career",
       "summary": "Dental software for clinics. I learned the product from the clinics' side, which shaped what I built once I moved into development. Along the way I picked up more and more frontend tasks and studied React every evening after work, until the developer role opened up six months in.",
       "parts": [
@@ -173,28 +173,28 @@
       "id": "bright",
       "company": "Bright Swimwear",
       "title": "COO",
-      "period": "Feb 2018 — May 2020",
+      "period": "Feb 2018 – May 2020",
       "lane": "career",
       "summary": "An early-stage swimwear brand selling through social media. I started in sales, became one of the top sellers, and worked through every part of the company on the way to COO: recruiting and training staff, helping build the support team, and running the company for a month as acting CEO. We were about 20 people, and I helped train at least half of them. The plan was to return after conscription, but the role was cut when the pandemic hit.",
       "parts": [
         {
           "title": "COO",
-          "period": "Feb 2018 — May 2020",
+          "period": "Feb 2018 – May 2020",
           "summary": "Reported directly to the founder and was the right hand for everything involving the Swedish staff. When the sales records kept coming, took over order management so every order on the site was handled daily, sometimes from morning to night. Kept recruiting and training alongside it, and planned and ran events for colleagues and guests. On military leave from Aug 2019."
         },
         {
           "title": "Acting CEO",
-          "period": "Jun 2018 — Jul 2018",
+          "period": "Jun 2018 – Jul 2018",
           "summary": "A month in charge of all operations."
         },
         {
           "title": "Customer support",
-          "period": "May 2018 — Dec 2018",
+          "period": "May 2018 – Dec 2018",
           "summary": "Helped build the support desk when the company needed one. Support in Zendesk in Swedish, English and German, and recruited and trained the new support staff."
         },
         {
           "title": "Influencer marketing team leader",
-          "period": "Feb 2018 — Aug 2018",
+          "period": "Feb 2018 – Aug 2018",
           "summary": "Recruited influencers for collaborations, negotiated the deals and sold on commission. Promoted to team leader on KPIs, then recruited and trained new influencer marketers."
         }
       ],
@@ -217,22 +217,22 @@
       "parts": [
         {
           "title": "Hemvärnet",
-          "period": "Jun 2025 — present",
+          "period": "Jun 2025 – present",
           "summary": "Home Guard, alongside regular work, where I also lead."
         },
         {
           "title": "Army Ranger (Radio Operator)",
-          "period": "Aug 2019 — Jun 2020",
+          "period": "Aug 2019 – Jun 2020",
           "summary": "Eleven months of conscription (värnplikt) as a ranger (jägarsoldat) and radio operator in the 31st Ranger Battalion, Livregementets husarer (K3), Karlsborg, including a couple of intense weeks on royal guard duty (Högvakten), where I did a little leadership."
         },
         {
           "title": "ULv, Luftvärnsförbundets ungdomsavdelning",
-          "period": "Aug 2015 — Aug 2019",
+          "period": "Aug 2015 – Aug 2019",
           "summary": "The youth section of the air-defence association in Roslagen, part of Sweden's voluntary defence organisations and run largely on assignment from Försvarsmakten. Took the leadership course, then led the other cadets and did some lighter instructing."
         },
         {
           "title": "Young Pilots",
-          "period": "Oct 2014 — Jan 2019",
+          "period": "Oct 2014 – Jan 2019",
           "summary": "The youth programme of Frivilliga Flygkåren, the voluntary flying corps. Camps and courses."
         }
       ],
@@ -246,7 +246,7 @@
       "id": "teknikmagasinet",
       "company": "Teknikmagasinet",
       "title": "Sales Associate / Phone Repair",
-      "period": "Oct 2018 — Nov 2021",
+      "period": "Oct 2018 – Nov 2021",
       "lane": "earlier",
       "summary": "Sales, campaigns, store displays and phone repairs, mostly in Åkersberga. I was in the store's staff pool the whole time, and for a while part-time with set hours, fitted around military service and Muntra. From the store manager's work certificate (2019, translated): “Filip is incredibly service-minded, willing to learn, and constantly does his best.”",
       "tags": [
@@ -260,7 +260,7 @@
       "id": "mcdonalds",
       "company": "McDonald's Åkersberga",
       "title": "Restaurant Crew Member",
-      "period": "May 2017 — Jun 2018",
+      "period": "May 2017 – Jun 2018",
       "lane": "earlier",
       "summary": "Register, kitchen and drive-through. First job.",
       "tags": [
@@ -274,7 +274,7 @@
       "id": "affarsvarlden",
       "title": "Affärsvärlden",
       "kind": "Client",
-      "period": "Nov 2025 — Jun 2026",
+      "period": "Nov 2025 – Jun 2026",
       "summary": "I owned the infrastructure and deploys for Affärsvärlden and Placera: Terraform on UpCloud, with GitHub Actions. I also worked full-stack in Next.js and Payload, in a tech team of five where four of us worked on the same parts. The two sites publish Swedish business news and investor information from one shared codebase. I worked mainly on Affärsvärlden, on a remote contract through Kumpan, and helped add OpenSearch to the infrastructure and the app.",
       "result": "Every environment is defined in Terraform, so a new one comes from code, not a checklist.",
       "tags": [
@@ -293,7 +293,7 @@
       "id": "suntarbetsliv",
       "title": "Suntarbetsliv",
       "kind": "Client",
-      "period": "Oct 2023 — Oct 2025",
+      "period": "Oct 2023 – Oct 2025",
       "summary": "I built Friskfaktorlabbet full-stack, a reusable form tool that helps workplaces assess their health factors, in PHP, MySQL and WordPress, and shaped its architecture. Suntarbetsliv makes its tools for the more than a million people who work in Sweden's municipalities and regions. Over two years through Kumpan, in a core team of four, I also took on nearly all the project management on the assignment and brought Lean into the team's process. Later I also worked in Next.js, Payload and Supabase, and built the AI chatbot on suntarbetsliv.se, using RAG and vector search.",
       "result": "Met a tight deadline on a legacy build, and the tool is live today.",
       "tags": [
@@ -314,7 +314,7 @@
       "id": "evoli",
       "title": "Evoli",
       "kind": "Client",
-      "period": "Aug 2022 — May 2023",
+      "period": "Aug 2022 – May 2023",
       "summary": "I built the frontend for Evoli's new back office for claims handlers and owned its UX/UI design, design decisions included. Evoli is a digital insurance company. On a contract through Kumpan, I had a say in the system architecture and worked closely with the dev team, the product owner and management. I also helped structure the project, its tickets and the routines around them.",
       "result": "A new back office for claims handlers, and guidelines for how the team structures the work and writes its tickets.",
       "tags": [
@@ -327,7 +327,7 @@
       "id": "muntra",
       "title": "Muntra",
       "kind": "Employer",
-      "period": "Jun 2021 — May 2022",
+      "period": "Jun 2021 – May 2022",
       "summary": "I was solely responsible for the frontend of nine codebases at Muntra, which makes software for dental clinics, and saw that work through: QA, support and the integrations. That was in a small tech team: the CTO, me and one to three backend developers. Several were built from scratch:",
       "highlights": [
         "A booking site and an embeddable booking widget",
