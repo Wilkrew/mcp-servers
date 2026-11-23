@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-14",
-    "commit": "13d2789",
+    "commit": "780e695",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -80,7 +80,7 @@
       "title": "SEO Specialist / Developer",
       "period": "Aug 2026 – present",
       "lane": "career",
-      "summary": "SEO strategy and delivery for clients from e-commerce and B2B to local service companies. I run the client meetings and own the long-term relationship on my accounts. Between clients I build tools for my own work, some of them AI-assisted.",
+      "summary": "SEO strategy and delivery for clients from e-commerce and B2B to local service companies. I run the client meetings and own the long-term relationship on my accounts. Between clients I build tools for my own work, some of them AI-assisted, and several colleagues now use them too.",
       "tags": [
         "SEO",
         "Client relationships",
@@ -1238,8 +1238,8 @@
       },
       {
         "id": "repair",
-        "name": "Fixing stuff, literally",
-        "line": "“I develop & fix stuff” isn't only about code. Before software was my job, and for a while alongside it, I repaired phones at Teknikmagasinet."
+        "name": "Fixing more than code",
+        "line": "“I develop & fix stuff” isn't only about code. Just as often, what needs fixing is how the work runs. I brought Lean into the team at Suntarbetsliv and helped Evoli's team set guidelines for how it structures work and writes tickets. At Bright Swimwear, when acting CEO was added on top of my other work and nobody could take over my tasks, I trained someone from scratch to be my assistant. My most literal hotfixes: new screens and batteries at Teknikmagasinet, fixed on the spot."
       }
     ],
     "quests": [
