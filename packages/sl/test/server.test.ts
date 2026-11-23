@@ -58,6 +58,15 @@ test('the server names itself, with a title and icons on heinel.dev', () => {
   assert.ok(info?.icons?.every(i => i.src.startsWith('https://heinel.dev/mcp-icons/')))
 })
 
+test('the instructions ask for a phone-friendly answer and the credit', () => {
+  const text = client.getInstructions() ?? ''
+  assert.match(text, /one bold sentence saying what to take, when and from where/)
+  assert.match(text, /one short line per departure or leg, never a wide table/)
+  assert.match(text, /live: false follows the timetable/)
+  assert.match(text, /End with the stop used, the time of the data and the credit/)
+  assert.match(text, /https:\/\/www\.trafiklab\.se/)
+})
+
 test('stop search handles missing å, ä, ö and prefers the plain stop', () => {
   assert.equal(findStops(sites, 'T-Centralen')[0].id, 9001)
   assert.equal(findStops(sites, 'hotorget')[0].name, 'Hötorget')
