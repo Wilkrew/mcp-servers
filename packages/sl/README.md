@@ -32,6 +32,7 @@ See the root README for adding it to Claude Code or Claude Desktop. A hosted cop
 - **Stop layouts:** the stop point list (about 14,000 points, 8 MB) is fetched on the first `stop_layout` call and cached for a day. Retired bus stop positions that SL keeps with designations like `OLD` are left out.
 - **Times** are local Stockholm time. Departures come that way from SL; the journey planner sends UTC, which the server converts. Delay is expected minus scheduled, in minutes.
 - **Language:** SL writes most notices in Swedish. The server picks an English version when there is one and otherwise tells the assistant to translate.
+- **Answers:** the server's instructions ask the assistant for an answer that reads well on a phone: one bold sentence on what to take, when and from where; one short line per departure or leg, with an icon and a text label for the mode; minutes up to 15 minutes ahead and clock times after; delays from 2 minutes; only the notices that affect the trip; and the stop, the time of the data and the credit at the end. Four tool descriptions add one line each on what an answer from that tool should show.
 
 ## Tests
 
