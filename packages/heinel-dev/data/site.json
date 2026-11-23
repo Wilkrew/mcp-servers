@@ -1,8 +1,8 @@
 {
   "source": {
     "site": "https://heinel.dev",
-    "updated": "2026-11-14",
-    "commit": "fa2fb81",
+    "updated": "2026-11-23",
+    "commit": "c90f32e",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -17,7 +17,7 @@
       },
       {
         "label": "Posting",
-        "value": "Emax Media · SEO Specialist / Developer"
+        "value": "Emax Media · Developer / SEO Specialist"
       },
       {
         "label": "Base",
@@ -77,7 +77,7 @@
     {
       "id": "emax",
       "company": "Emax Media",
-      "title": "SEO Specialist / Developer",
+      "title": "Developer / SEO Specialist",
       "period": "Aug 2026 – present",
       "lane": "career",
       "summary": "SEO strategy and delivery for clients from e-commerce and B2B to local service companies. I run the client meetings and own the long-term relationship on my accounts. Between clients I build tools for my own work, some of them AI-assisted, and several colleagues now use them too.",
