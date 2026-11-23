@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-14",
-    "commit": "780e695",
+    "commit": "fa2fb81",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -101,7 +101,7 @@
         },
         {
           "title": "Company events",
-          "summary": "In a volunteer team of three or four, and sometimes on my own, I planned and ran Kumpan's events for colleagues, clients and possible recruits: monthly board-game nights with seasonal themes, adapted when clients or a possible recruit were coming, after-works, and a conference for about 20 people. They built the workplace community and client relationships, and were part of how Kumpan recruited."
+          "summary": "In a volunteer team of three or four, and sometimes on my own, I planned and ran Kumpan's events for colleagues, clients and possible recruits: monthly board-game nights with seasonal themes, adapted when clients or possible recruits were coming, after-works, and a conference for about 20 people. They built the workplace community and client relationships, and were part of how Kumpan recruited."
         }
       ],
       "tags": [
@@ -118,7 +118,7 @@
       "title": "Co-Founder / Full-stack Developer",
       "period": "Dec 2022 – Apr 2024",
       "lane": "career",
-      "summary": "I co-founded this AI study tool and built it full-stack, on the side of Kumpan. It used RAG to answer from course material and documents users uploaded. We tested it with a handful of teachers, students and people who work with teachers, then closed it. Selling to schools meant public procurement, which made the business case hard, and as an AI wrapper we were racing the AI giants. Without an in with a school or real procurement know-how, it wasn't worth going on. What I took from it: an AI product needs an edge of its own, not just a model behind it.",
+      "summary": "I co-founded this AI study tool and built it full-stack, alongside my job at Kumpan. It used RAG to answer from course material and documents users uploaded. We tested it with a handful of teachers, students and people who work with teachers, then closed it. Selling to schools meant public procurement, which made the business case hard, and as an AI wrapper we were racing the AI giants. Without an in with a school or real procurement know-how, it wasn't worth going on. What I took from it: an AI product needs an edge of its own, not just a model behind it.",
       "tags": [
         "Next.js",
         "TypeScript",
@@ -180,7 +180,7 @@
         {
           "title": "COO",
           "period": "Feb 2018 – May 2020",
-          "summary": "Reported directly to the founder and was the right hand for everything involving the Swedish staff. When the sales records kept coming, took over order management so every order on the site was handled daily, sometimes from morning to night. Kept recruiting and training alongside it, and planned and ran events for colleagues and guests. On military leave from Aug 2019."
+          "summary": "Reported directly to the founder and was his right hand for everything involving the Swedish staff. When the sales records kept coming, took over order management so every order on the site was handled daily, sometimes from morning to night. Kept recruiting and training alongside it, and planned and ran events for colleagues and guests. On military leave from Aug 2019."
         },
         {
           "title": "Acting CEO",
@@ -190,7 +190,7 @@
         {
           "title": "Customer support",
           "period": "May 2018 – Dec 2018",
-          "summary": "Helped build the support desk when the company needed one. Support in Zendesk in Swedish, English and German, and recruited and trained the new support staff."
+          "summary": "Helped build the support desk when the company needed one. Provided support in Zendesk in Swedish, English and German, and recruited and trained the new support staff."
         },
         {
           "title": "Influencer marketing team leader",
@@ -223,7 +223,7 @@
         {
           "title": "Army Ranger (Radio Operator)",
           "period": "Aug 2019 – Jun 2020",
-          "summary": "Eleven months of conscription (värnplikt) as a ranger (jägarsoldat) and radio operator in the 31st Ranger Battalion, Livregementets husarer (K3), Karlsborg, including a couple of intense weeks on royal guard duty (Högvakten), where I did a little leadership."
+          "summary": "Eleven months of conscription (värnplikt) as a ranger (jägarsoldat) and radio operator in the 31st Ranger Battalion, Livregementets husarer (K3), Karlsborg, including a couple of intense weeks on royal guard duty (Högvakten), where I also had some leadership duties."
         },
         {
           "title": "ULv, Luftvärnsförbundets ungdomsavdelning",
@@ -248,7 +248,7 @@
       "title": "Sales Associate / Phone Repair",
       "period": "Oct 2018 – Nov 2021",
       "lane": "earlier",
-      "summary": "Sales, campaigns, store displays and phone repairs, mostly in Åkersberga. I was in the store's staff pool the whole time, and for a while part-time with set hours, fitted around military service and Muntra. From the store manager's work certificate (2019, translated): “Filip is incredibly service-minded, willing to learn, and constantly does his best.”",
+      "summary": "Sales, campaigns, store displays and phone repairs, mostly in Åkersberga. I was in the store's staff pool the whole time, and for a while also worked part-time with set hours, fitted around military service and Muntra. From the store manager's work certificate (2019, translated): “Filip is incredibly service-minded, willing to learn, and constantly does his best.”",
       "tags": [
         "Sales",
         "Customer service",
@@ -294,7 +294,7 @@
       "title": "Suntarbetsliv",
       "kind": "Client",
       "period": "Oct 2023 – Oct 2025",
-      "summary": "I built Friskfaktorlabbet full-stack, a reusable form tool that helps workplaces assess their health factors, in PHP, MySQL and WordPress, and shaped its architecture. Suntarbetsliv makes its tools for the more than a million people who work in Sweden's municipalities and regions. Over two years through Kumpan, in a core team of four, I also took on nearly all the project management on the assignment and brought Lean into the team's process. Later I also worked in Next.js, Payload and Supabase, and built the AI chatbot on suntarbetsliv.se, using RAG and vector search.",
+      "summary": "I built Friskfaktorlabbet, a reusable form tool that helps workplaces assess their health factors, full-stack in PHP, MySQL and WordPress, and shaped its architecture. Suntarbetsliv makes its tools for the more than a million people who work in Sweden's municipalities and regions. Over two years through Kumpan, in a core team of four, I also took on nearly all the project management on the assignment and brought Lean into the team's process. Later I also worked in Next.js, Payload and Supabase, and built the AI chatbot on suntarbetsliv.se, using RAG and vector search.",
       "result": "Met a tight deadline on a legacy build, and the tool is live today.",
       "tags": [
         "Project management",
@@ -328,7 +328,7 @@
       "title": "Muntra",
       "kind": "Employer",
       "period": "Jun 2021 – May 2022",
-      "summary": "I was solely responsible for the frontend of nine codebases at Muntra, which makes software for dental clinics, and saw that work through: QA, support and the integrations. That was in a small tech team: the CTO, me and one to three backend developers. Several were built from scratch:",
+      "summary": "I was solely responsible for the frontend of nine codebases at Muntra, which makes software for dental clinics, and saw that work through: QA, support and the integrations. The tech team was small: the CTO, me and one to three backend developers. Several of the codebases were built from scratch:",
       "highlights": [
         "A booking site and an embeddable booking widget",
         "A referral widget",
@@ -432,7 +432,7 @@
         "I took over a legacy, custom-built WordPress setup at short notice, with a tight deadline.",
         "Suntarbetsliv's site was still on WordPress, so the tool had to live there.",
         "It had to stay maintainable after the contract, by Suntarbetsliv or the next team.",
-        "About ten people were involved around it, so plans and priorities had to stay clear."
+        "About ten people were involved, so plans and priorities had to stay clear."
       ],
       "role": "I worked in a core team of four, with one other developer, and about ten people around us. I built the tool full-stack, shaped its architecture and took on nearly all the project management on the assignment. Later I worked in Next.js, Payload and Supabase too, and built the AI chatbot on suntarbetsliv.se, using retrieval-augmented generation (RAG) and vector search.",
       "decisions": [
@@ -494,7 +494,7 @@
       "url": "https://heinel.dev/methods",
       "title": "AI skills, maintained like software",
       "oneLiner": "A personal Claude plugin: 22 skills, 18 of them researched methods, tested and maintained by subagents and a scheduled agent run. It's built like software, with CI on every pull request, a cost budget, versioned releases and an export to five other AI agent clients.",
-      "problem": "AI assistants answer confidently, even when they're wrong, and good method gets lost between chats and projects. That means answers someone has to check again, and results that depend on who asked and how. I wanted the methods I rely on to be explicit, sourced and applied the same way every time, without the cost of loading them growing out of hand.",
+      "problem": "AI assistants answer confidently, even when they're wrong, and good practice gets lost between chats and projects. That means answers someone has to check again, and results that depend on who asked and how. I wanted the methods I rely on to be explicit, sourced and applied the same way every time, without the cost of loading them growing out of hand.",
       "constraints": [
         "Every skill's description loads into every conversation, so each one costs tokens all the time.",
         "The agents read web pages and GitHub issues, and outside text can carry instructions meant to hijack them.",
@@ -593,7 +593,7 @@
         {
           "id": "teaching",
           "name": "Teaching and learning",
-          "line": "The learner produces something, then gets feedback: an attempt before the explanation, a ladder of hints instead of answers, retrieval and spacing. It tells learning apart from getting a task done."
+          "line": "The learner produces something, then gets feedback: an attempt before the explanation, a ladder of hints instead of answers, retrieval practice and spaced repetition. It tells learning apart from getting a task done."
         },
         {
           "id": "data",
@@ -603,7 +603,7 @@
         {
           "id": "testing",
           "name": "Testing strategy",
-          "line": "What to test and where: start from what would hurt if it broke, test at the cheapest level that catches it, check behaviour, and keep tests trustworthy, flaky, property-based and CI checks included."
+          "line": "What to test and where: start from what would hurt if it broke, test at the cheapest level that catches it, check behaviour, and keep tests trustworthy. Also covers flaky tests, property-based tests and CI checks."
         },
         {
           "id": "security",
@@ -633,7 +633,7 @@
         {
           "id": "proactive",
           "name": "Proactive help",
-          "line": "After the answer, at most three suggestions tied to the user's own plans: collisions, closing windows, single points of failure and missing steps. Nothing is done without a yes."
+          "line": "After the answer, at most three suggestions tied to the user's own plans: clashes, time windows about to close, single points of failure and missing steps. Nothing is done without a yes."
         },
         {
           "id": "asks",
@@ -645,7 +645,7 @@
       "decisions": [
         {
           "name": "Treat skills as software",
-          "line": "The source lives in GitHub, and every pull request and every change to main runs CI in GitHub Actions: the self-test, the export and the cost measurement. The self-test checks structure, versions, references and valid frontmatter, and blocks private names, which it knows only as salted hashes."
+          "line": "The source lives on GitHub, and every pull request and every change to main runs CI in GitHub Actions: the self-test, the export and the cost measurement. The self-test checks structure, versions, references and valid frontmatter, and blocks private names, which it knows only as salted hashes."
         },
         {
           "name": "Evidence first",
@@ -657,7 +657,7 @@
         },
         {
           "name": "A budget for cost",
-          "line": "A script estimates tokens in three tiers: descriptions, loaded in every chat; instructions, loaded when a skill is used; and reference files, loaded only when read. The self-test fails if the descriptions together pass about 1,500 tokens."
+          "line": "A script estimates tokens in three tiers: descriptions, loaded in every chat; instructions, loaded when a skill is used; and reference files, loaded only when read. The self-test fails if the descriptions together exceed about 1,500 tokens."
         },
         {
           "name": "Portable, not locked in",
@@ -807,12 +807,12 @@
           "line": "Everyone moves up a visible ladder, from guest to trial member to member, with a stated reason at each step. Vouches from people you've actually met open the most trusted events, and there's no single trust score to farm."
         },
         {
-          "name": "Money never buys around the rules",
+          "name": "No buying your way around the rules",
           "line": "Blocks, contact rules, discretion tools and seeing who liked you are free. Money pays for membership, never for access to other people. There are no ads on member pages, and likes, visibility and search are never for sale."
         },
         {
           "name": "Rules in code, not in the screens",
-          "line": "The safety and privacy rules live in tested code on the server, not in the screens, so the interface can't skip them."
+          "line": "The safety and privacy rules live in tested code on the server, not in the screens, so the interface can't bypass them."
         }
       ],
       "rules": [
@@ -913,7 +913,7 @@
         {
           "id": "rules",
           "name": "Rules at hand",
-          "line": "All the rules, in a shorter version of Emma's rulebook, with contents and search."
+          "line": "All the rules, in a shorter version of Emma's rulebook, with a table of contents and search."
         },
         {
           "id": "create",
@@ -923,7 +923,7 @@
         {
           "id": "sheets",
           "name": "Sheets for play",
-          "line": "Stress, Vitality, wounds, conditions and gear, saved to the player's account and on every device."
+          "line": "Stress, Vitality, wounds, conditions and gear, saved to the player's account and available on every device."
         },
         {
           "id": "party",
@@ -1098,7 +1098,7 @@
           "id": "japanese",
           "name": "Japanese",
           "reps": 1,
-          "line": "Over a year in, slowly: around JLPT N5, the first of five levels. Not a conversation yet."
+          "line": "Over a year in, slowly: around JLPT N5, the first of five levels. Not conversational yet."
         },
         {
           "id": "crypto",
@@ -1143,7 +1143,7 @@
         "id": "serve",
         "name": "Serve",
         "reps": 4,
-        "line": "First- to third-line support, a support team I helped build from nothing, users trained on site and remote."
+        "line": "First- to third-line support, a support team I helped build from nothing, users trained on site and remotely."
       },
       {
         "id": "run",
@@ -1229,7 +1229,7 @@
       {
         "id": "trusted",
         "name": "Trusted with the company",
-        "line": "Four months into the job at Bright Swimwear, the founder went on holiday and left me running the company. I was acting CEO for a month."
+        "line": "When I was four months into the job at Bright Swimwear, the founder went on holiday and left me running the company. I was acting CEO for a month."
       },
       {
         "id": "instructor",
@@ -1287,7 +1287,7 @@
     "backstory": [
       "Teenage years in Young Pilots and the air-defence youth section. A first job in the kitchen at McDonald's, then a young swimwear brand where selling on social media turned into running the operations. After upper secondary school, eleven months as an army ranger in Karlsborg.",
       "Back from the regiment in 2020, after a few months in retail, I got serious about teaching myself to code. Joined Muntra in customer success, picked up more and more development tasks, and studied React every evening as soon as I got home, to keep up with them. By the summer of 2021 I was a developer.",
-      "Then four years as a consultant at Kumpan, with an AI study tool I co-founded on the side, and now SEO and development at Emax Media. The studying never really stopped: right now it's Japanese, and evenings go to my own projects, a community app, a planning platform and a plugin of AI skills I use across them."
+      "Then four years as a consultant at Kumpan, with an AI study tool I co-founded on the side, and now SEO and development at Emax Media. The studying never really stopped: right now it's Japanese. Evenings go to my own projects: a community app, a planning platform and a plugin of AI skills I use across them."
     ]
   },
   "recommendations": [
