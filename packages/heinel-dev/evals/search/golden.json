@@ -1,0 +1,350 @@
+{
+  "about": "Questions for the search tool at heinel.dev/mcp, each with the chunks that answer it. A positive question passes at k when one of its relevant chunks is in the top k results. A negative question passes when search returns nothing. See evals/README.md before adding or changing questions.",
+  "k": 3,
+  "limit": 5,
+  "gate": {
+    "hit_at_1": 0.88,
+    "hit_at_3": 0.97,
+    "mrr": 0.92,
+    "negatives": 0.85
+  },
+  "questions": [
+    {
+      "id": "kw-terraform",
+      "kind": "keyword",
+      "query": "Terraform",
+      "relevant": ["work:affarsvarlden", "skills:around"]
+    },
+    {
+      "id": "kw-rag",
+      "kind": "keyword",
+      "query": "RAG chatbot",
+      "relevant": ["work:suntarbetsliv", "case:suntarbetsliv#decisions", "experience:studyclub"]
+    },
+    {
+      "id": "kw-opensearch",
+      "kind": "keyword",
+      "query": "OpenSearch",
+      "relevant": ["work:affarsvarlden", "skills:server"]
+    },
+    {
+      "id": "kw-react-native",
+      "kind": "keyword",
+      "query": "React Native app",
+      "relevant": ["experience:muntra-dev", "work:muntra", "skills:interface", "experience:kumpan"]
+    },
+    {
+      "id": "kw-payload",
+      "kind": "keyword",
+      "query": "Payload CMS",
+      "relevant": ["work:affarsvarlden", "work:suntarbetsliv", "skills:server"]
+    },
+    {
+      "id": "kw-wordpress",
+      "kind": "keyword",
+      "query": "WordPress PHP",
+      "relevant": [
+        "work:suntarbetsliv",
+        "case:suntarbetsliv#decisions",
+        "case:suntarbetsliv#constraints",
+        "skills:server",
+        "sheet:abilities:build"
+      ]
+    },
+    {
+      "id": "kw-mcp",
+      "kind": "keyword",
+      "query": "MCP servers",
+      "relevant": ["sheet:studying:mcp", "skills:ai"]
+    },
+    {
+      "id": "kw-claude-plugin",
+      "kind": "keyword",
+      "query": "Claude plugin skills",
+      "relevant": ["work:methods", "case:ai-skills", "case:ai-skills#result", "skills:ai"]
+    },
+    {
+      "id": "kw-drizzle",
+      "kind": "keyword",
+      "query": "Drizzle ORM",
+      "relevant": ["case:nether#engineering"]
+    },
+    {
+      "id": "kw-playwright",
+      "kind": "keyword",
+      "query": "Playwright axe accessibility tests",
+      "relevant": ["case:nether#engineering", "case:murderhouse#engineering"]
+    },
+    {
+      "id": "kw-rls",
+      "kind": "keyword",
+      "query": "row-level security",
+      "relevant": ["case:murderhouse#engineering"]
+    },
+    { "id": "kw-websocket", "kind": "keyword", "query": "WebSocket", "relevant": ["work:muntra"] },
+    {
+      "id": "kw-workers",
+      "kind": "keyword",
+      "query": "Cloudflare Workers",
+      "relevant": ["work:planning-platform", "sheet:studying:crypto"]
+    },
+    {
+      "id": "kw-supabase",
+      "kind": "keyword",
+      "query": "Supabase",
+      "relevant": [
+        "work:murderhouse",
+        "case:murderhouse#decisions",
+        "experience:studyclub",
+        "skills:server",
+        "experience:kumpan",
+        "work:suntarbetsliv",
+        "case:murderhouse#engineering"
+      ]
+    },
+    {
+      "id": "kw-seo-tools",
+      "kind": "keyword",
+      "query": "Ahrefs Screaming Frog",
+      "relevant": ["skills:search"]
+    },
+    {
+      "id": "kw-evals",
+      "kind": "keyword",
+      "query": "evals",
+      "relevant": ["skills:ai", "case:ai-skills#agentic", "sheet:studying:mcp"]
+    },
+    {
+      "id": "kw-iac",
+      "kind": "keyword",
+      "query": "infrastructure as code",
+      "relevant": ["work:affarsvarlden"]
+    },
+    { "id": "kw-insurance", "kind": "keyword", "query": "insurance", "relevant": ["work:evoli"] },
+    {
+      "id": "kw-dental",
+      "kind": "keyword",
+      "query": "dental software",
+      "relevant": ["experience:muntra-dev", "experience:muntra-csm", "work:muntra"]
+    },
+    {
+      "id": "kw-ux",
+      "kind": "keyword",
+      "query": "UX design Figma",
+      "relevant": ["work:evoli", "skills:around"]
+    },
+    {
+      "id": "kw-lean",
+      "kind": "keyword",
+      "query": "Lean startup",
+      "relevant": [
+        "case:suntarbetsliv#decisions",
+        "experience:muntra-dev",
+        "sheet:moments:repair",
+        "work:suntarbetsliv",
+        "case:suntarbetsliv#result"
+      ]
+    },
+    {
+      "id": "kw-events",
+      "kind": "keyword",
+      "query": "event planning",
+      "relevant": [
+        "experience:kumpan",
+        "sheet:quests:events",
+        "sheet:abilities:run",
+        "now:off the clock",
+        "work:planning-platform"
+      ]
+    },
+    {
+      "id": "kw-ceo",
+      "kind": "keyword",
+      "query": "acting CEO",
+      "relevant": ["sheet:moments:trusted", "experience:bright", "profile"]
+    },
+    {
+      "id": "kw-qa",
+      "kind": "keyword",
+      "query": "testing and QA",
+      "relevant": [
+        "experience:muntra-dev",
+        "skills:around",
+        "work:muntra",
+        "case:nether#engineering",
+        "case:murderhouse#engineering"
+      ]
+    },
+    {
+      "id": "kw-linux",
+      "kind": "keyword",
+      "query": "self-hosting Linux",
+      "relevant": ["sheet:quests:host", "now:off the clock", "sheet:stances:bare"]
+    },
+    {
+      "id": "kw-games",
+      "kind": "keyword",
+      "query": "board games",
+      "relevant": ["sheet:quests:games", "experience:kumpan", "now:off the clock"]
+    },
+    {
+      "id": "kw-consent",
+      "kind": "keyword",
+      "query": "consent before contact",
+      "relevant": ["case:nether"]
+    },
+    {
+      "id": "kw-slasher",
+      "kind": "keyword",
+      "query": "slasher films",
+      "relevant": ["case:murderhouse"]
+    },
+    {
+      "id": "kw-prompt-injection",
+      "kind": "keyword",
+      "query": "prompt injection",
+      "relevant": ["case:ai-skills#constraints", "case:ai-skills#value"],
+      "note": "Missed until 26 Nov 2026: the site said agents could be hijacked by outside text, never \"prompt injection\". The methods page now names it."
+    },
+
+    {
+      "id": "q-projects",
+      "kind": "question",
+      "query": "Has he managed projects?",
+      "relevant": ["experience:muntra-dev", "work:suntarbetsliv", "sheet:abilities:run", "profile"]
+    },
+    {
+      "id": "q-affarsvarlden",
+      "kind": "question",
+      "query": "What did he do at Affärsvärlden?",
+      "relevant": ["work:affarsvarlden", "experience:kumpan"]
+    },
+    {
+      "id": "q-leadership",
+      "kind": "question",
+      "query": "Does he have leadership experience?",
+      "relevant": [
+        "experience:bright",
+        "sheet:moments:instructor",
+        "experience:forsvarsmakten",
+        "sheet:abilities:run",
+        "sheet:moments:trusted"
+      ]
+    },
+    {
+      "id": "q-languages",
+      "kind": "question",
+      "query": "Which languages does he speak?",
+      "relevant": ["sheet:languages", "now:speaks", "profile"]
+    },
+    {
+      "id": "q-stockholm",
+      "kind": "question",
+      "query": "Is he based in Stockholm?",
+      "relevant": ["profile", "now:where"]
+    },
+    {
+      "id": "q-now",
+      "kind": "question",
+      "query": "What is he working on right now?",
+      "relevant": ["now:what", "now:where", "experience:emax"]
+    },
+    {
+      "id": "q-ai-users",
+      "kind": "question",
+      "query": "Has he shipped AI features to real users?",
+      "relevant": ["work:suntarbetsliv", "experience:studyclub", "case:suntarbetsliv#decisions"]
+    },
+    {
+      "id": "q-ai-correct",
+      "kind": "question",
+      "query": "How does he check that AI output is correct?",
+      "relevant": [
+        "sheet:stances:assisted",
+        "case:ai-skills#decisions",
+        "case:ai-skills",
+        "case:delivery",
+        "work:delivery",
+        "case:delivery#steps"
+      ]
+    },
+    {
+      "id": "q-military",
+      "kind": "question",
+      "query": "Did he do military service?",
+      "relevant": ["experience:forsvarsmakten", "sheet:origin"],
+      "note": "Missed until 26 Nov 2026: the site said army ranger, conscription and Home Guard, never \"military\". The experience entry now says military service."
+    },
+    {
+      "id": "q-support",
+      "kind": "question",
+      "query": "Does he have customer support experience?",
+      "relevant": [
+        "experience:muntra-csm",
+        "sheet:abilities:serve",
+        "experience:muntra-dev",
+        "experience:teknikmagasinet"
+      ]
+    },
+    {
+      "id": "q-ecommerce",
+      "kind": "question",
+      "query": "Has he worked with e-commerce clients?",
+      "relevant": ["experience:emax", "now:what"]
+    },
+
+    {
+      "id": "sv-react",
+      "kind": "swedish",
+      "query": "Har han jobbat med React?",
+      "relevant": [
+        "skills:interface",
+        "experience:muntra-dev",
+        "work:evoli",
+        "work:muntra",
+        "experience:kumpan",
+        "sheet:abilities:build",
+        "sheet:stances:bare"
+      ]
+    },
+    {
+      "id": "sv-varnplikt",
+      "kind": "swedish",
+      "query": "värnplikt",
+      "relevant": ["experience:forsvarsmakten"]
+    },
+    {
+      "id": "sv-projektledning",
+      "kind": "swedish",
+      "query": "projektledning",
+      "relevant": ["experience:muntra-dev", "work:suntarbetsliv", "sheet:abilities:run"],
+      "note": "The index is the English site only, so Swedish words find nothing unless they also appear in the English text."
+    },
+
+    { "id": "neg-kubernetes", "kind": "negative", "query": "Kubernetes", "relevant": [] },
+    { "id": "neg-salesforce", "kind": "negative", "query": "Salesforce", "relevant": [] },
+    { "id": "neg-rust", "kind": "negative", "query": "Rust", "relevant": [] },
+    { "id": "neg-angular", "kind": "negative", "query": "Angular", "relevant": [] },
+    {
+      "id": "neg-question",
+      "kind": "negative",
+      "query": "Does he know Kubernetes?",
+      "relevant": [],
+      "note": "Question words alone shouldn't produce matches."
+    },
+    {
+      "id": "integrity-undefined",
+      "kind": "negative",
+      "query": "undefined",
+      "relevant": [],
+      "note": "Catches content fields that render as the word undefined."
+    },
+    {
+      "id": "integrity-nan",
+      "kind": "negative",
+      "query": "NaN",
+      "relevant": [],
+      "note": "Catches numbers that render as NaN."
+    }
+  ]
+}

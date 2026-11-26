@@ -66,6 +66,7 @@ claude mcp add sl -- node --experimental-strip-types /path/to/mcp-servers/packag
 - **Tool descriptions are the interface.** The model picks a tool from its name and description alone, so they say what comes back and when to use it.
 - **Outside text is data.** Each server tells the model to treat content from the source (site text, SL's notices) as data, never as instructions.
 - **Errors the model can act on.** An unknown stop or role comes back as a tool error that names the alternatives, not as a crash.
+- **Search evals.** [`packages/heinel-dev/evals`](packages/heinel-dev/evals) asks the search 50 questions and scores whether the right part of the site comes back. They run in Python with the standard library only, and CI fails if a score drops. heinel.dev's CI runs the same files against the site.
 - **Tested through a real client.** The tests connect an MCP client to each server, in memory and over stdio, and call the tools the way an assistant would. The SL tests replay trimmed responses from SL, so they never call the network.
 - **Fair to the source.** The SL server caches the stop and stop point lists for a day, disruptions for a minute (SL's fair-use limit), trips for 30 seconds and departures for 20 seconds.
 
@@ -73,11 +74,11 @@ claude mcp add sl -- node --experimental-strip-types /path/to/mcp-servers/packag
 
 ```text
 packages/
-  heinel-dev/   src/  data/site.json  scripts/export-site.ts  test/
+  heinel-dev/   src/  data/site.json  scripts/export-site.ts  test/  evals/
   sl/           src/  test/fixtures/
 ```
 
-CI runs the type check and all tests on every push and pull request.
+CI runs the type check, all tests and the search evals on every push and pull request.
 
 ## Related
 
