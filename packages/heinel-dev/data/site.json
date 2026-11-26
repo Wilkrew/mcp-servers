@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-23",
-    "commit": "c90f32e",
+    "commit": "f7ce552",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -213,7 +213,7 @@
       "title": "Swedish defence",
       "period": "Since 2014",
       "lane": "career",
-      "summary": "A thread since my early teens: Young Pilots and the air-defence youth section, conscription as an army ranger straight after upper secondary school, and the Home Guard today.",
+      "summary": "A thread since my early teens: Young Pilots and the air-defence youth section, conscription (military service) as an army ranger straight after upper secondary school, and the Home Guard today.",
       "parts": [
         {
           "title": "Hemvärnet",
@@ -497,7 +497,7 @@
       "problem": "AI assistants answer confidently, even when they're wrong, and good practice gets lost between chats and projects. That means answers someone has to check again, and results that depend on who asked and how. I wanted the methods I rely on to be explicit, sourced and applied the same way every time, without the cost of loading them growing out of hand.",
       "constraints": [
         "Every skill's description loads into every conversation, so each one costs tokens all the time.",
-        "The agents read web pages and GitHub issues, and outside text can carry instructions meant to hijack them.",
+        "The agents read web pages and GitHub issues, and outside text can carry instructions meant to hijack them (prompt injection).",
         "No private names may reach a skill.",
         "Dated facts and links go stale, so they need rechecking at the source.",
         "It has to work in other AI clients too, not only in Claude."
@@ -1092,7 +1092,7 @@
       }
     ],
     "studying": {
-      "updated": "2026-11-09",
+      "updated": "2026-11-26",
       "items": [
         {
           "id": "japanese",
@@ -1110,7 +1110,7 @@
           "id": "mcp",
           "name": "MCP servers",
           "reps": 2,
-          "line": "Three so far, built with the official TypeScript SDK: one for my CV, one for Stockholm's public transport and a read-only one for my trip planner."
+          "line": "Three so far, built with the official TypeScript SDK: one for my CV, one for Stockholm's public transport and a read-only one for my trip planner. Evals in Python test the CV server's search: they found three bugs and two gaps in my wording, and a correct answer is in the top three for 98% of the test questions, up from 72%."
         },
         {
           "id": "home-guard",

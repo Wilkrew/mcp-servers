@@ -77,6 +77,18 @@ test('search finds the right piece and links to it', async () => {
   assert.ok(index.size > 50)
 })
 
+// The same three fixes as heinel-site's lib/mcp (its evals/search found them).
+test('every case section is searchable, and question words match nothing', async () => {
+  const broken = await call('search', { query: 'undefined' })
+  assert.deepEqual(broken.data.results, [], 'no section renders as undefined')
+  const drizzle = await call('search', { query: 'Drizzle' })
+  assert.equal(drizzle.data.results[0]?.id, 'case:nether#engineering', 'sentence lists are indexed')
+  const premise = await call('search', { query: 'slasher films' })
+  assert.equal(premise.data.results[0]?.id, 'case:murderhouse', 'paragraph lists are indexed')
+  const question = await call('search', { query: 'What did he do at Affärsvärlden?' })
+  assert.equal(question.data.results[0]?.id, 'work:affarsvarlden', 'question words are left out')
+})
+
 test('resource and prompt', async () => {
   const res = await client.readResource({ uri: 'heinel://site.json' })
   const body = JSON.parse((res.contents[0] as { text: string }).text)
