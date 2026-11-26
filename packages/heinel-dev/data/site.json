@@ -2,7 +2,7 @@
   "source": {
     "site": "https://heinel.dev",
     "updated": "2026-11-23",
-    "commit": "f7ce552",
+    "commit": "4d721e1",
     "note": "Generated from the public content of heinel.dev. Do not edit by hand."
   },
   "profile": {
@@ -1110,7 +1110,11 @@
           "id": "mcp",
           "name": "MCP servers",
           "reps": 2,
-          "line": "Three so far, built with the official TypeScript SDK: one for my CV, one for Stockholm's public transport and a read-only one for my trip planner. Evals in Python test the CV server's search: they found three bugs and two gaps in my wording, and a correct answer is in the top three for 98% of the test questions, up from 72%."
+          "line": "Three so far, built with the official TypeScript SDK: for my CV, Stockholm's public transport and my trip planner. I test the CV one's search with evals in Python.",
+          "link": {
+            "href": "https://github.com/Wilkrew/mcp-servers/tree/main/packages/heinel-dev/evals",
+            "label": "The evals on GitHub"
+          }
         },
         {
           "id": "home-guard",
