@@ -12,7 +12,13 @@ type Role = {
 }
 
 const text = (...parts: (string | undefined | null | false)[]) => parts.filter(Boolean).join(' ')
-const lines = (list?: Named[]) => (list ?? []).map(x => `${x.name}: ${x.line}`).join(' ')
+// A text field is one string or a list of paragraphs (Nether's and Murderhouse's premise).
+const prose = (value: unknown) =>
+  typeof value === 'string' ? value : Array.isArray(value) ? value.filter(x => typeof x === 'string').join(' ') : undefined
+// A case section is a list of named lines ({ name, line }) or of plain
+// sentences (Nether's and Murderhouse's engineering notes).
+const lines = (list?: readonly (Named | string)[]) =>
+  (list ?? []).map(x => (typeof x === 'string' ? x : `${x.name}: ${x.line}`)).join(' ')
 
 /** Splits the site into searchable pieces, each with a link back. */
 export function chunks(s: Site = site): Chunk[] {
@@ -41,7 +47,7 @@ export function chunks(s: Site = site): Chunk[] {
   }
   for (const [id, c] of Object.entries(s.cases) as [string, Record<string, any>][]) {
     const base = { url: c.url as string }
-    out.push({ ...base, id: `case:${id}`, title: c.title, text: text(c.oneLiner, c.problem, c.premise, c.role) })
+    out.push({ ...base, id: `case:${id}`, title: c.title, text: text(prose(c.oneLiner), prose(c.problem), prose(c.premise), prose(c.role)) })
     const lists: [string, string][] = [
       ['constraints', (c.constraints ?? []).join(' ')],
       ['decisions', lines(c.decisions)],
@@ -51,8 +57,8 @@ export function chunks(s: Site = site): Chunk[] {
       ['steps', lines(c.steps)],
       ['rules', lines(c.rules)],
       ['engineering', lines(c.engineering)],
-      ['left out', text(c.refuses)],
-      ['result', text(c.result, c.differently, c.origin, c.boundary)]
+      ['left out', text(prose(c.refuses))],
+      ['result', text(prose(c.result), prose(c.differently), prose(c.origin), prose(c.boundary))]
     ]
     for (const [section, body] of lists) {
       if (body) out.push({ ...base, id: `case:${id}#${section}`, title: `${c.title}: ${section}`, text: body })

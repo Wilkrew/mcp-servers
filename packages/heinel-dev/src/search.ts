@@ -7,6 +7,20 @@ export type Chunk = { id: string, title: string, text: string, url: string }
 const K1 = 1.2
 const B = 0.75
 
+// Words that carry no meaning in this index: English and Swedish question and
+// function words, and his name, since every chunk is about him. Without this,
+// "What did he do at Affärsvärlden?" ranked the recommendations first,
+// because they are the only text that says "he" (heinel-site's evals/search).
+const STOP = new Set(
+  (
+    'about after all also am an and any are as at be been but by can could did do does ' +
+    'for from had has have he her him his how if in into is me my of on or our over she so ' +
+    'than that the their them then there these they this those to us was we were what when ' +
+    'where which while who whom whose why will with would you your filip heinel ' +
+    'ar av de den det du en ett for han har hon hur jag med nar om pa som till var vad vem vilka vilken'
+  ).split(' ')
+)
+
 export function tokens(s: string): string[] {
   return s
     .normalize('NFD')
@@ -16,6 +30,7 @@ export function tokens(s: string): string[] {
     .map(t => t.replace(/^\.+|\.+$/g, ''))
     .filter(t => t.length > 1)
     .map(t => (t.length > 4 && t.endsWith('s') && !t.endsWith('ss') ? t.slice(0, -1) : t))
+    .filter(t => !STOP.has(t))
 }
 
 export class Index {
